@@ -1,0 +1,14 @@
+@mixin font-setting($a, $b) {
+  font-size: $a;
+  line-height: $b;
+}
+
+@mixin padding-x($a, $b) {
+  padding-right: $b;
+  padding-left: $a;
+}
+
+@mixin padding-y($a, $b) {
+  padding-top: $a;
+  padding-bottom: $b;
+}
