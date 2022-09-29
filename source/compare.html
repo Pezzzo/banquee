@@ -47,9 +47,9 @@
           </li>
         </ul>
       </nav>
-      <div class="page-nav__user-capabilities">
-        <button class="page-nav__sign-in" type="button">Login</button>
-        <a class="page-nav__create-account button" href="#">Open Account</a>
+      <div class="user-capabilities">
+        <button class="user-capabilities__sign-in" type="button">Login</button>
+        <a class="user-capabilities__create-account button" href="#">Open Account</a>
       </div>
     </div>
   </header>
@@ -79,41 +79,43 @@
             data-account-selection="Gold">Gold</button>
         </div>
 
-        <ul class="accounts__list">
-          <li class="accounts__item" data-account-selection="Basic">
-            <h3 class="account__name">Basic <span class="account__popular-name">Popular</span></h3>
-            <p class="account__price">Free</p>
-            <p class="account__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <picture>
-              <source type="image/webp" srcset="img/cards/basic-card.webp 1x, img/cards/basic-card@2x.webp 2x">
-              <img class="account__img" src="img/cards/basic-card.png" loading="lazy"
-                srcset="img/cards/basic-card@2x.png 2x" width="380" height="800" alt="изображение банковской карты">
-            </picture>
-            <a class="account__link button" href="#">Get started</a>
-          </li>
-          <li class="accounts__item" data-account-selection="Premium">
-            <h3 class="account__name">Premium</h3>
-            <p class="account__price">$5 <span class="account__price-description">per month</span></p>
-            <p class="account__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <picture>
-              <source type="image/webp" srcset="img/cards/premium-card.webp 1x, img/cards/premium-card@2x.webp 2x">
-              <img class="account__img" src="img/cards/premium-card.png" loading="lazy"
-                srcset="img/cards/premium-card@2x.png 2x" width="380" height="800" alt="изображение банковской карты">
-            </picture>
-            <a class="account__link button" href="#">Get started</a>
-          </li>
-          <li class="accounts__item" data-account-selection="Gold">
-            <h3 class="account__name">Gold</h3>
-            <p class="account__price">$10 <span class="account__price-description">per month</span></p>
-            <p class="account__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <picture>
-              <source type="image/webp" srcset="img/cards/gold-card.webp 1x, img/cards/gold-card@2x.webp 2x">
-              <img class="account__img" src="img/cards/gold-card.png" loading="lazy"
-                srcset="img/cards/gold-card@2x.png 2x" width="380" height="800" alt="изображение банковской карты">
-            </picture>
-            <a class="account__link button" href="#">Get started</a>
-          </li>
-        </ul>
+        <div class="accounts">
+          <ul class="accounts__list">
+            <li class="accounts__item" data-account-selection="Basic">
+              <h3 class="accounts__name">Basic <span class="accounts__popular-name">Popular</span></h3>
+              <p class="accounts__price">Free</p>
+              <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <picture>
+                <source type="image/webp" srcset="img/cards/basic-card.webp 1x, img/cards/basic-card@2x.webp 2x">
+                <img class="accounts__img" src="img/cards/basic-card.png" loading="lazy"
+                  srcset="img/cards/basic-card@2x.png 2x" width="380" height="800" alt="изображение банковской карты">
+              </picture>
+              <a class="accounts__link button" href="#">Get started</a>
+            </li>
+            <li class="accounts__item" data-account-selection="Premium">
+              <h3 class="accounts__name">Premium</h3>
+              <p class="accounts__price">$5 <span class="accounts__price-description">per month</span></p>
+              <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <picture>
+                <source type="image/webp" srcset="img/cards/premium-card.webp 1x, img/cards/premium-card@2x.webp 2x">
+                <img class="accounts__img" src="img/cards/premium-card.png" loading="lazy"
+                  srcset="img/cards/premium-card@2x.png 2x" width="380" height="800" alt="изображение банковской карты">
+              </picture>
+              <a class="accounts__link button" href="#">Get started</a>
+            </li>
+            <li class="accounts__item" data-account-selection="Gold">
+              <h3 class="accounts__name">Gold</h3>
+              <p class="accounts__price">$10 <span class="accounts__price-description">per month</span></p>
+              <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <picture>
+                <source type="image/webp" srcset="img/cards/gold-card.webp 1x, img/cards/gold-card@2x.webp 2x">
+                <img class="accounts__img" src="img/cards/gold-card.png" loading="lazy"
+                  srcset="img/cards/gold-card@2x.png 2x" width="380" height="800" alt="изображение банковской карты">
+              </picture>
+              <a class="accounts__link button" href="#">Get started</a>
+            </li>
+          </ul>
+        </div>
 
         <div class="compare-accounts">
 
