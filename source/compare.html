@@ -28,5 +28,391 @@
 
 <body class="page__body">
 
+  <header class="page-header">
+    <div class="wide-wrapper">
+      <a class="page-header__logo" href="index.html">banquee.</a>
+      <nav class="page-nav">
+        <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="features.html">Features</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="compare.html">Compare</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="support.html">Support</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="blog.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-nav__user-capabilities">
+        <button class="page-nav__sign-in" type="button">Login</button>
+        <a class="page-nav__create-account button" href="#">Open Account</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+
+    <h1 class="visually-hidden">Сравнения</h1>
+
+    <section class="section-hero">
+      <div class="section-hero__wrapper wide-wrapper">
+        <div class="section-hero__text-wrapper">
+          <p class="section-hero__subtitle">Compare Cards</p>
+          <h2 class="section-hero__title">The ideal card for you</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-compare">
+      <div class="section-compare__wrapper wide-wrapper">
+
+        <div class="section-compare__account-selection">
+          <button class="section-compare__account-selection-button" type="button"
+            data-account-selection="Basic">Basic</button>
+          <button class="section-compare__account-selection-button" type="button"
+            data-account-selection="Premium">Premium</button>
+          <button class="section-compare__account-selection-button" type="button"
+            data-account-selection="Gold">Gold</button>
+        </div>
+
+        <ul class="accounts__list">
+          <li class="accounts__item" data-account-selection="Basic">
+            <h3 class="account__name">Basic <span class="account__popular-name">Popular</span></h3>
+            <p class="account__price">Free</p>
+            <p class="account__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <picture>
+              <source type="image/webp" srcset="img/cards/basic-card.webp 1x, img/cards/basic-card@2x.webp 2x">
+              <img class="account__img" src="img/cards/basic-card.png" loading="lazy"
+                srcset="img/cards/basic-card@2x.png 2x" width="380" height="800" alt="изображение банковской карты">
+            </picture>
+            <a class="account__link button" href="#">Get started</a>
+          </li>
+          <li class="accounts__item" data-account-selection="Premium">
+            <h3 class="account__name">Premium</h3>
+            <p class="account__price">$5 <span class="account__price-description">per month</span></p>
+            <p class="account__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <picture>
+              <source type="image/webp" srcset="img/cards/premium-card.webp 1x, img/cards/premium-card@2x.webp 2x">
+              <img class="account__img" src="img/cards/premium-card.png" loading="lazy"
+                srcset="img/cards/premium-card@2x.png 2x" width="380" height="800" alt="изображение банковской карты">
+            </picture>
+            <a class="account__link button" href="#">Get started</a>
+          </li>
+          <li class="accounts__item" data-account-selection="Gold">
+            <h3 class="account__name">Gold</h3>
+            <p class="account__price">$10 <span class="account__price-description">per month</span></p>
+            <p class="account__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <picture>
+              <source type="image/webp" srcset="img/cards/gold-card.webp 1x, img/cards/gold-card@2x.webp 2x">
+              <img class="account__img" src="img/cards/gold-card.png" loading="lazy"
+                srcset="img/cards/gold-card@2x.png 2x" width="380" height="800" alt="изображение банковской карты">
+            </picture>
+            <a class="account__link button" href="#">Get started</a>
+          </li>
+        </ul>
+
+        <div class="compare-accounts">
+
+          <h3 class="compare-accounts__title">Credit Card</h3>
+          <ul class="compare-accounts__list">
+            <li class="compare-accounts__item">
+              <div class="compare-accounts__options">
+                <div class="compare-accounts__name-wrapper">
+                  <h4 class="compare-accounts__name">Physical Card</h4>
+                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
+                </div>
+                <p class="compare-accounts__option">Optional</p>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+              </div>
+            </li>
+            <li class="compare-accounts__item">
+              <div class="compare-accounts__options">
+                <div class="compare-accounts__name-wrapper">
+                  <h4 class="compare-accounts__name">Virtual Card</h4>
+                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
+                </div>
+                <p class="compare-accounts__option">-</p>
+                <p class="compare-accounts__option">Up to 2</p>
+                <p class="compare-accounts__option">Unlimited</p>
+              </div>
+            </li>
+            <li class="compare-accounts__item">
+              <div class="compare-accounts__options">
+                <div class="compare-accounts__name-wrapper">
+                  <h4 class="compare-accounts__name">Contactless Payments</h4>
+                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+              </div>
+            </li>
+            <li class="compare-accounts__item">
+              <div class="compare-accounts__options">
+                <div class="compare-accounts__name-wrapper">
+                  <h4 class="compare-accounts__name">Mobile Payments</h4>
+                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <h3 class="compare-accounts__title">Bank Account</h3>
+          <ul class="compare-accounts__list">
+            <li class="compare-accounts__item">
+              <div class="compare-accounts__options">
+                <div class="compare-accounts__name-wrapper">
+                  <h4 class="compare-accounts__name">Free Payments Worldwide</h4>
+                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
+                </div>
+                <p class="compare-accounts__option">-</p>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+              </div>
+            </li>
+            <li class="compare-accounts__item">
+              <div class="compare-accounts__options">
+                <div class="compare-accounts__name-wrapper">
+                  <h4 class="compare-accounts__name">Free ATM withdrawls</h4>
+                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
+                </div>
+                <p class="compare-accounts__option">2</p>
+                <p class="compare-accounts__option">5</p>
+                <p class="compare-accounts__option">10</p>
+              </div>
+            </li>
+            <li class="compare-accounts__item">
+              <div class="compare-accounts__options">
+                <div class="compare-accounts__name-wrapper">
+                  <h4 class="compare-accounts__name">Mobile Banking</h4>
+                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <h3 class="compare-accounts__title">Extra Features</h3>
+          <ul class="compare-accounts__list">
+            <li class="compare-accounts__item">
+              <div class="compare-accounts__options">
+                <div class="compare-accounts__name-wrapper">
+                  <h4 class="compare-accounts__name">Saving Accounts</h4>
+                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
+                </div>
+                <p class="compare-accounts__option">2</p>
+                <p class="compare-accounts__option">5</p>
+                <p class="compare-accounts__option">Unlimited</p>
+              </div>
+            </li>
+            <li class="compare-accounts__item">
+              <div class="compare-accounts__options">
+                <div class="compare-accounts__name-wrapper">
+                  <h4 class="compare-accounts__name"></h4>
+                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+              </div>
+            </li>
+            <li class="compare-accounts__item">
+              <div class="compare-accounts__options">
+                <div class="compare-accounts__name-wrapper">
+                  <h4 class="compare-accounts__name"></h4>
+                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+                <div class="compare-accounts__option">
+                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                    alt="галочка">
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact">
+      <div class="section-contact__wrapper narrow-wrapper">
+        <div class="section-contact__text-wrapper">
+          <h2 class="section-contact__title">Still have questions?</h2>
+          <p class="section-contact__text">We are here to help.</p>
+        </div>
+        <div class="section-contact__tel">
+          <a class="section-contact__tel-link" href="tel:+49176123456">+49 176 123 456</a>
+          <p class="section-contact__description">Support Hotline</p>
+        </div>
+        <div class="section-contact__mail">
+          <a class="section-contact__mail-link" href="mailto:help@banquee.com">help@banquee.com</a>
+          <p class="section-contact__description">Support Email</p>
+        </div>
+        <button class="section-contact__chat" type="button">Chat with us</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="wide-wrapper">
+
+      <section class="section-nav">
+
+        <h2 class="visually-hidden">навигация</h2>
+
+        <a class="section-nav__logo" href="index.html">banquee.</a>
+        <div class="section-nav__nav-wrapper">
+          <ul class="section-nav__list">
+            <li class="section-nav__item">
+              <h3 class="section-nav__subtitle">About</h3>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="features.html">Features</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="compare.html">Pricing</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="support.html">Support</a>
+            </li>
+          </ul>
+          <ul class="section-nav__list">
+            <li class="section-nav__item">
+              <h3 class="section-nav__subtitle">Blog</h3>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="blog.html">Products</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="blog.html">Technology</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="blog.html">Crypto</a>
+            </li>
+          </ul>
+          <ul class="section-nav__list">
+            <li class="section-nav__item">
+              <h3 class="section-nav__subtitle">Webflow</h3>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="#">Styleguide</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="#">Licensing</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="#">Changelog</a>
+            </li>
+          </ul>
+          <ul class="section-nav__list">
+            <li class="section-nav__item">
+              <h3 class="section-nav__subtitle">Social Media</h3>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="#">Twitter</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="#">Facebook</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="#">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-copyright">
+
+        <h2 class="visually-hidden">авторские права</h2>
+
+        <div class="section-copyright__wrapper">
+          <p class="section-copyright__designed">
+            © Designed by
+            <span class="section-copyright__designer-name">Pawel Gola</span>
+            - Powered by
+            <span class="section-copyright__hosting">Webflow</span>
+          </p>
+          <a class="section-copyright__developed" href="https://github.com/Pezzzo" target="_blank">
+            <span class="section-copyright__author">Pezzzo</span> <img class="section-copyright__github-logo"
+              src="img/github.png" width="30" height="30" alt="логотип github">
+          </a>
+          <div class="section-copyright__text-wrapper">
+            <p class="section-copyright__text">Impressum</p>
+            <p class="section-copyright__text">Datenschutz</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </footer>
+
 </body>
+
 </html>
