@@ -1,0 +1,39 @@
+.section-copyright {
+  color: $base-black-opacity-50;
+  border-top: 1px solid $grey-color;
+  @include padding-y(6px, 38px);
+  @include font-setting(14px, 160%);
+}
+
+.section-copyright__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-copyright__text-wrapper {
+  display: flex;
+}
+
+.section-copyright__github-logo {
+  opacity: 0.5;
+}
+
+.section-copyright__hosting-link {
+  color: $turquoise-color;
+
+  &:hover .section-copyright__github-logo {
+    opacity: 1;
+  }
+}
+
+.section-copyright__author {
+  display: flex;
+  align-items: center;
+}
+
+.section-copyright__text {
+  &--mod {
+    margin-right: 32px;
+  }
+}

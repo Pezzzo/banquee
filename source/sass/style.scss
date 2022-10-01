@@ -10,8 +10,14 @@
 @import "blocks/page.scss";
 @import "blocks/accounts.scss";
 @import "blocks/page-main.scss";
+@import "blocks/company-logo.scss";
 
 // header
 @import "blocks/header/page-header.scss";
 @import "blocks/header/page-nav.scss";
 @import "blocks/header/blog-preview.scss";
+
+// footer
+@import "blocks/footer/page-footer.scss";
+@import "blocks/footer/section-nav.scss";
+@import "blocks/footer/section-copyright.scss";

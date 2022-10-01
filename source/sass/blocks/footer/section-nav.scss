@@ -1,0 +1,31 @@
+.section-nav {
+  display: flex;
+  justify-content: space-between;
+  @include padding-y(96px, 80px);
+}
+
+.section-nav__nav-wrapper {
+  display: flex;
+}
+
+.section-nav__subtitle {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: $DMSans;
+  @include font-setting(18px, 140%);
+}
+
+.section-nav__link {
+  color: $base-black-opacity-50;
+  font-family: $Inter;
+  @include font-setting(16px, 160%);
+}
+
+.section-nav__list {
+  min-width: 200px;
+  @include zero-indents;
+}
+
+.section-nav__item {
+  margin-bottom: 16px;
+}
