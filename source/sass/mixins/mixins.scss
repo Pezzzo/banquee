@@ -12,3 +12,12 @@
   padding-top: $a;
   padding-bottom: $b;
 }
+
+@mixin padding-x-y($a, $b) {
+  padding: $a $b $a $b;
+}
+
+@mixin zero-indents() {
+  margin: 0;
+  padding: 0;
+}

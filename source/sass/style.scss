@@ -5,5 +5,13 @@
 @import "global/global.scss";
 @import "fonts/fonts.scss";
 
-// Blocks
+// blocks
+@import "blocks/button.scss";
 @import "blocks/page.scss";
+@import "blocks/accounts.scss";
+@import "blocks/page-main.scss";
+
+// header
+@import "blocks/header/page-header.scss";
+@import "blocks/header/page-nav.scss";
+@import "blocks/header/blog-preview.scss";

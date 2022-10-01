@@ -29,10 +29,13 @@
 <body class="page__body">
 
   <header class="page-header">
-    <div class="wide-wrapper">
+    <div class="page-header__wrapper wide-wrapper">
       <a class="page-header__logo" href="index.html">banquee.</a>
       <nav class="page-nav">
         <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="index.html">Home</a>
+          </li>
           <li class="page-nav__item">
             <a class="page-nav__link" href="features.html">Features</a>
           </li>
@@ -43,13 +46,13 @@
             <a class="page-nav__link" href="support.html">Support</a>
           </li>
           <li class="page-nav__item">
-            <a class="page-nav__link" href="blog.html">Blog</a>
+              <a class="page-nav__link page-nav__link--active page-nav__link--dropdown page-nav__link--dropdown-active" href="blog.html">Blog</a>
           </li>
         </ul>
       </nav>
-      <div class="user-capabilities">
-        <button class="user-capabilities__sign-in" type="button">Login</button>
-        <a class="user-capabilities__create-account button" href="#">Open Account</a>
+      <div class="page-header__capabilities">
+        <button class="page-header__sign-in" type="button">Login</button>
+        <a class="page-header__open-account button button--mod" href="#">Open Account</a>
       </div>
     </div>
   </header>

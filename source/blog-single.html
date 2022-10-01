@@ -29,10 +29,13 @@
 <body class="page__body">
 
   <header class="page-header">
-    <div class="wide-wrapper">
+    <div class="page-header__wrapper wide-wrapper">
       <a class="page-header__logo" href="index.html">banquee.</a>
       <nav class="page-nav">
         <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="index.html">Home</a>
+          </li>
           <li class="page-nav__item">
             <a class="page-nav__link" href="features.html">Features</a>
           </li>
@@ -43,13 +46,83 @@
             <a class="page-nav__link" href="support.html">Support</a>
           </li>
           <li class="page-nav__item">
-            <a class="page-nav__link" href="blog.html">Blog</a>
+            <div class="page-nav__dropdown">
+              <a class="page-nav__link page-nav__link--dropdown" href="blog.html">Blog</a>
+              <div class="page-nav__dropdown-content blog-preview">
+                <div class="blog-preview__content">
+                  <h3 class="blog-preview__title">Latest Articles</h3>
+                  <ul class="blog-preview__list">
+                    <li class="blog-preview__item">
+                      <a class="blog-preview__link" href="blog-single.html">
+                        <picture>
+                          <source type="image/webp"
+                            srcset="img/blog-images/blog-image-1.webp 1x, img/blog-images/blog-image-1@2x.webp 2x">
+                          <img class="blog-preview__img" src="img/blog-images/blog-image-1.jpg" loading="lazy"
+                            srcset="img/blog-images/blog-image-1@2x.jpg 2x" width="100" height="100"
+                            alt="бесконтактная оплата">
+                        </picture>
+                        <div class="blog-preview__text-wrapper">
+                          <h4 class="blog-preview__subtitle">How To Start Using Banko For Your Startup</h4>
+                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="blog-preview__item">
+                      <a class="blog-preview__link" href="blog-single.html">
+                        <picture>
+                          <source type="image/webp"
+                            srcset="img/blog-images/blog-image-2.webp 1x, img/blog-images/blog-image-2@2x.webp 2x">
+                          <img class="blog-preview__img" src="img/blog-images/blog-image-2.jpg" loading="lazy"
+                            srcset="img/blog-images/blog-image-2@2x.jpg 2x" width="100" height="100"
+                            alt="бесконтактная оплата">
+                        </picture>
+                        <div class="blog-preview__text-wrapper">
+                          <h4 class="blog-preview__subtitle">10 Things Nobody Told You About Banko</h4>
+                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="blog-preview__item">
+                      <a class="blog-preview__link" href="blog-single.html">
+                        <picture>
+                          <source type="image/webp"
+                            srcset="img/blog-images/blog-image-3.webp 1x, img/blog-images/blog-image-3@2x.webp 2x">
+                          <img class="blog-preview__img" src="img/blog-images/blog-image-3.jpg" loading="lazy"
+                            srcset="img/blog-images/blog-image-3@2x.jpg 2x" width="100" height="100"
+                            alt="бесконтактная оплата">
+                        </picture>
+                        <div class="blog-preview__text-wrapper">
+                          <h4 class="blog-preview__subtitle">How To Start Using Banko For Your Startup</h4>
+                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="blog-preview__item">
+                      <a class="blog-preview__link" href="blog-single.html">
+                        <picture>
+                          <source type="image/webp"
+                            srcset="img/blog-images/blog-image-4.webp 1x, img/blog-images/blog-image-4@2x.webp 2x">
+                          <img class="blog-preview__img" src="img/blog-images/blog-image-4.jpg" loading="lazy"
+                            srcset="img/blog-images/blog-image-4@2x.jpg 2x" width="100" height="100"
+                            alt="бесконтактная оплата">
+                        </picture>
+                        <div class="blog-preview__text-wrapper">
+                          <h4 class="blog-preview__subtitle">Why We Love Banko (And You Should, Too!)</h4>
+                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <a class="blog-preview__blog-link" href="blog.html">All Articles</a>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
-      <div class="user-capabilities">
-        <button class="user-capabilities__sign-in" type="button">Login</button>
-        <a class="user-capabilities__create-account button" href="#">Open Account</a>
+      <div class="page-header__capabilities">
+        <button class="page-header__sign-in" type="button">Login</button>
+        <a class="page-header__open-account button button--mod" href="#">Open Account</a>
       </div>
     </div>
   </header>
@@ -107,7 +180,7 @@
     <section class="section-related-articles">
       <div class="section-related-articles__wrapper narrow-wrapper">
         <div>
-          <h2 class="section-related-articles__title">Share article</h2>
+          <h2 class="section-related-articles__title">Related Articles</h2>
           <a class="section-related-articles__link" href="blog.html">All Articles</a>
         </div>
         <div class="blog">

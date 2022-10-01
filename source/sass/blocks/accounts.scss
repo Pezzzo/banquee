@@ -1,0 +1,10 @@
+.accounts__list {
+  display: flex;
+}
+
+.accounts__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 290px;
+  margin-right: 64px;
+}

@@ -17,8 +17,9 @@
   color: $base-black;
   font-weight: $font-medium;
   font-size: 16px;
-  font-family: $Inter, "Arial", sans-serif;
+  font-family: $Inter;
   line-height: 120%;
+  @include padding-x(40px, 40px);
 
   li {
     list-style: none;

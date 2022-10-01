@@ -1,0 +1,38 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: $base-white;
+  @include padding-y(24px, 24px);
+}
+
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header__capabilities {
+  font-family: $DMSans;
+  line-height: 100%;
+}
+
+.page-header__logo {
+  color: $turquoise-color;
+  font-weight: $font-bold;
+  font-size: 32px;
+  font-family: $DMSans;
+  line-height: 100%;
+}
+
+.page-header__sign-in {
+  padding-right: 32px;
+  color: $turquoise-color;
+  font-size: 18px;
+}
+
+.page-header__open-account {
+  font-size: 15px;
+}

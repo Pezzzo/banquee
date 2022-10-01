@@ -1,0 +1,76 @@
+.page-nav {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.page-nav__list {
+  display: flex;
+  align-items: center;
+  @include zero-indents;
+}
+
+.page-nav__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.page-nav__link {
+  position: relative;
+  @include font-setting(16px, 170%);
+  @include padding-x-y(8px, 12px);
+
+  color: $base-black;
+
+  &:hover {
+    background-color: $grey-light-color;
+    border-radius: 6px;
+  }
+
+  &--active {
+    background-color: $grey-light-color;
+    border-radius: 6px;
+    box-shadow: 0 0 4px 2px $grey-color;
+    pointer-events: none;
+  }
+
+  &--dropdown {
+    padding-right: 32px;
+  }
+
+  &--dropdown::after,
+  &--dropdown-active::after {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 9px;
+    height: 6px;
+    background: url("../img/arrow-down.svg") 50% 50% no-repeat;
+    transform: translateY(-50%);
+    content: "";
+  }
+
+  &--dropdown-active::after {
+    opacity: 0.2;
+  }
+}
+
+.page-nav__dropdown {
+  position: relative;
+  display: block;
+}
+
+.page-nav__dropdown-content {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  z-index: 10;
+  display: none;
+  min-width: 800px;
+  background-color: $grey-light-color;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+  transform: translateX(-50%);
+}
+
+.page-nav__dropdown:hover .page-nav__dropdown-content {
+  display: block;
+}
