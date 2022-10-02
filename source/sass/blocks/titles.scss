@@ -1,0 +1,11 @@
+.title {
+  font-family: $DMSans;
+
+  &--big {
+    @include font-setting(60px, 110%);
+  }
+
+  &--small {
+    @include font-setting(20px, 120%);
+  }
+}

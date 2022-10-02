@@ -17,8 +17,8 @@
 .page-nav__link {
   position: relative;
   @include font-setting(16px, 170%);
-  @include padding-x-y(8px, 12px);
 
+  padding: 8px 12px;
   color: $base-black;
 
   &:hover {

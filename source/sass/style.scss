@@ -5,13 +5,6 @@
 @import "global/global.scss";
 @import "fonts/fonts.scss";
 
-// blocks
-@import "blocks/button.scss";
-@import "blocks/page.scss";
-@import "blocks/accounts.scss";
-@import "blocks/page-main.scss";
-@import "blocks/company-logo.scss";
-
 // header
 @import "blocks/header/page-header.scss";
 @import "blocks/header/page-nav.scss";
@@ -21,3 +14,25 @@
 @import "blocks/footer/page-footer.scss";
 @import "blocks/footer/section-nav.scss";
 @import "blocks/footer/section-copyright.scss";
+
+// blocks
+@import "blocks/page.scss";
+@import "blocks/accounts.scss";
+@import "blocks/page-main.scss";
+@import "blocks/company-logo.scss";
+@import "blocks/section-hero.scss";
+@import "blocks/section-features.scss";
+@import "blocks/section-transactions.scss";
+@import "blocks/section-savings.scss";
+@import "blocks/section-tools.scss";
+@import "blocks/section-account.scss";
+@import "blocks/section-testimonials.scss";
+@import "blocks/section-cta.scss";
+@import "blocks/section-faq.scss";
+@import "blocks/section-blog.scss";
+@import "blocks/blog.scss";
+
+@import "blocks/button.scss";
+@import "blocks/link.scss";
+@import "blocks/titles.scss";
+@import "blocks/accordion.scss";

@@ -1,0 +1,79 @@
+.section-hero {
+  &--bg-color {
+    background-color: $turquoise-light-color;
+  }
+
+  &--home-height {
+    min-height: 718px;
+  }
+}
+
+.section-hero__home {
+  margin-top: 128px;
+
+  @include bg-image(
+    "../img/cards/front-cards.png",
+    no-repeat,
+    92%,
+    50%,
+    contain
+  );
+  @include webp-and-retina-bg-image(
+    "../img/cards/front-cards@2x.png",
+    "../img/cards/front-cards.webp",
+    "../img/cards/front-cards@2x.webp"
+  );
+}
+
+.section-hero__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.section-hero__title {
+  margin: 16px 0;
+  @include font-setting(100px, 110%);
+}
+
+.section-hero__text {
+  @include margin-y(0, 32px);
+  @include font-setting(24px, 180%);
+}
+
+.section-hero__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include margin-y(0, 64px);
+  @include font-setting(18px, 180%);
+}
+
+.section-hero__item {
+  min-width: 245px;
+  @include margin-y(0, 16px);
+}
+
+.section-hero__item-text {
+  position: relative;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -42px;
+    width: 26px;
+    height: 26px;
+    background: url("../img/icons/check-mark-light.svg") 50% 50% no-repeat;
+    transform: translateY(-50%);
+    content: "";
+  }
+}
+
+.section-hero__links-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.section-hero__link {
+  margin-right: 32px;
+}

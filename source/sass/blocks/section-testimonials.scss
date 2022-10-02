@@ -1,0 +1,110 @@
+.section-testimonials__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 1122px;
+  row-gap: 64px;
+  margin-bottom: 160px;
+}
+
+.section-testimonials__title {
+  margin: 0;
+}
+
+.section-testimonials__subtitle {
+  @include margin-y(0, 16px);
+  @include font-setting(28px, 120%);
+}
+
+.section-testimonials__text-wrapper {
+  grid-column: 1/2;
+}
+
+.section-testimonials__rating-wrapper {
+  display: flex;
+  grid-column: 2/-1;
+  align-items: end;
+  justify-content: end;
+}
+
+.section-testimonials__rating {
+  position: relative;
+  margin: 0;
+  padding: 4px 11px;
+  @include font-setting(18px, 180%);
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -46px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/icons/rating-icon.svg") 50% 50% no-repeat;
+    transform: translateY(-50%);
+    content: "";
+  }
+}
+
+.section-testimonials__rating-numbers {
+  color: $turquoise-color;
+}
+
+.section-testimonials__lists-wrapper {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 32px;
+}
+
+.section-testimonials__list {
+  @include zero-indents;
+
+  &--col1 {
+    grid-column: 1/2;
+  }
+
+  &--col2 {
+    grid-column: 2/3;
+  }
+
+  &--col3 {
+    grid-column: 3/-1;
+  }
+}
+
+.section-testimonials__item {
+  position: relative;
+  min-width: 378px;
+  padding: 60px 32px 32px;
+  border: 2px solid $grey-color;
+  border-radius: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 116px;
+    height: 20px;
+    background: url("../img/icons/rating-stars-icon.svg") 50% 50% no-repeat;
+    content: "";
+  }
+}
+
+.section-testimonials__author {
+  margin-bottom: 0;
+  @include font-setting(18px, 140%);
+}
+
+.section-testimonials__comment {
+  margin-bottom: 24px;
+  @include font-setting(16px, 160%);
+}
+
+.section-testimonials__profession {
+  margin: 0;
+  color: $base-black-opacity-50;
+  @include font-setting(14px, 160%);
+}

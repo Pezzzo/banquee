@@ -1,0 +1,27 @@
+.link {
+  position: relative;
+  color: $turquoise-color;
+
+  &--arrow {
+    &::after {
+      position: absolute;
+      top: 3px;
+      right: -26px;
+      width: 16px;
+      height: 14px;
+      background: url("../img/icons/arrow-right.svg") 50% 50% no-repeat;
+      background-size: cover;
+      transition: all 0.1s ease-in-out;
+      content: "";
+    }
+
+    &:hover {
+      &::after {
+        top: 2px;
+        right: -30px;
+        width: 18px;
+        height: 16px;
+      }
+    }
+  }
+}

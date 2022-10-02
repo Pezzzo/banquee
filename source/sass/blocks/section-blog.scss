@@ -1,0 +1,18 @@
+.section-blog__wrapper {
+  @include padding-y(160px, 160px);
+}
+
+.section-blog__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.section-blog__title {
+  margin: 0;
+}
+
+.section-blog__link {
+  margin-right: 30px;
+}

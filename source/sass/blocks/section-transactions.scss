@@ -1,0 +1,93 @@
+.section-transactions {
+  background-color: $turquoise-light-color;
+}
+
+.section-transactions__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 144px;
+}
+
+.section-transactions__text-wrapper {
+  max-width: 560px;
+  @include padding-y(128px, 128px);
+}
+
+.section-transactions__title {
+  margin: 0;
+}
+
+.section-transactions__list {
+  &--mod {
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 0;
+  }
+}
+
+.section-transactions__item {
+  position: relative;
+
+  &--mark {
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -42px;
+      width: 26px;
+      height: 26px;
+      background: url("../img/icons/check-mark-dark.svg") 50% 50% no-repeat;
+      transform: translateY(-50%);
+      content: "";
+    }
+  }
+
+  &--icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 16px 24px 16px 82px;
+    background-color: $base-white;
+    border-radius: 10px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      width: 50px;
+      height: 50px;
+      background: url("../img/icons/apple-icon.svg") 50% 50% no-repeat;
+      background-size: cover;
+      transform: translateY(-50%);
+      content: "";
+    }
+  }
+}
+
+.section-transactions__cost,
+.section-transactions__type,
+.section-transactions__name {
+  @include zero-indents;
+}
+
+.section-transactions__cost,
+.section-transactions__name {
+  @include font-setting(18px, 140%);
+}
+
+.section-transactions__type {
+  color: $base-black-opacity-50;
+  @include font-setting(18px, 160%);
+}
+
+.section-transactions__text {
+  @include margin-y(16px, 32px);
+  @include font-setting(20px, 180%);
+
+  &--mod {
+    font-size: 18px;
+    @include margin-y(0, 12px);
+  }
+}

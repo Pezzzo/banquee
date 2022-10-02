@@ -1,0 +1,145 @@
+.section-savings__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 612px;
+  @include padding-y(160px, 80px);
+}
+
+.section-savings__text-wrapper {
+  max-width: 600px;
+}
+
+.section-savings__link-wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-bottom: 64px;
+}
+
+.section-savings__link {
+  margin-right: 26px;
+}
+
+.section-savings__name,
+.section-savings__cost {
+  margin: 0;
+}
+
+.section-savings__title,
+.section-savings__subtitle {
+  @include margin-y(0, 16px);
+}
+
+.section-savings__text {
+  @include font-setting(20px, 180%);
+
+  @include margin-y(0, 64px);
+}
+
+.section-savings__cost {
+  color: $base-black-opacity-50;
+  @include font-setting(14px, 160%);
+}
+
+.section-savings__list {
+  @include zero-indents;
+
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1/-1;
+}
+
+.section-savings__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 214px;
+  min-height: 280px;
+
+  &:not(:last-child)::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 214px;
+    height: 214px;
+    content: "";
+  }
+
+  &:nth-child(1) {
+    &::before {
+      @include bg-image("../img/saving-laptop.png", no-repeat, 50%, 50%, cover);
+      @include webp-and-retina-bg-image(
+        "../img/saving-laptop@2x.png",
+        "../img/saving-laptop.webp",
+        "../img/saving-laptop@2x.webp"
+      );
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      @include bg-image("../img/saving-bike.png", no-repeat, 50%, 50%, cover);
+      @include webp-and-retina-bg-image(
+        "../img/saving-bike@2x.png",
+        "../img/saving-bike.webp",
+        "../img/saving-bike@2x.webp"
+      );
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      @include bg-image(
+        "../img/saving-holiday.png",
+        no-repeat,
+        50%,
+        50%,
+        cover
+      );
+      @include webp-and-retina-bg-image(
+        "../img/saving-holiday@2x.png",
+        "../img/saving-holiday.webp",
+        "../img/saving-holiday@2x.webp"
+      );
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      @include bg-image("../img/saving-camera.png", no-repeat, 50%, 50%, cover);
+      @include webp-and-retina-bg-image(
+        "../img/saving-camera@2x.png",
+        "../img/saving-camera.webp",
+        "../img/saving-camera@2x.webp"
+      );
+    }
+  }
+
+  &:last-child {
+    justify-content: start;
+  }
+}
+
+.section-savings__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.section-savings__add-button {
+  width: 214px;
+  height: 214px;
+  padding: 0;
+  background-color: $grey-light-color;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 4px 2px $grey-color;
+  }
+}
+
+.section-savings__add-image {
+  width: 40px;
+  height: 40px;
+}
