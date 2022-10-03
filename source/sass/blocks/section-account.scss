@@ -8,8 +8,9 @@
   align-items: center;
   max-width: 800px;
   min-height: 1118px;
+  padding-top: 160px;
   text-align: center;
-  @include margin-y(160px, 160px);
+  @include margin-y(0, 160px);
 
   @include bg-image(
     "../img/cards/three-cards.png",

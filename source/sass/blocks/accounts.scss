@@ -1,10 +1,59 @@
 .accounts__list {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .accounts__item {
   display: flex;
   flex-direction: column;
-  max-width: 290px;
-  margin-right: 64px;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 64px;
+  }
+}
+
+.accounts__popular-name {
+  margin-left: 8px;
+  padding: 2px 6px;
+  color: $turquoise-color;
+  font-family: $Inter;
+  background-color: $turquoise-light-color;
+  border-radius: 4px;
+  @include font-setting(12px, 180%);
+}
+
+.accounts__img {
+  width: 355px;
+  margin-bottom: 20px;
+}
+
+.accounts__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include margin-y(0, 24px);
+}
+
+.accounts__price {
+  @include margin-y(0, 8px);
+
+  font-weight: bold;
+  font-family: $DMSans;
+  @include font-setting(40px, 100%);
+}
+
+.accounts__description {
+  @include margin-y(0, 24px);
+
+  color: $base-black-opacity-50;
+  @include font-setting(16px, 160%);
+}
+
+.accounts__price-description {
+  @include font-setting(16px, 160%);
+
+  color: $base-black-opacity-50;
+  font-family: $Inter;
 }

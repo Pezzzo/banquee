@@ -5,7 +5,8 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-import squoosh from 'gulp-libsquoosh';
+import webp from 'gulp-webp';
+import imagemin from 'gulp-imagemin';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
@@ -63,7 +64,11 @@ const scripts = () => {
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(squoosh())
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({quality: 85, progressive: true}),
+      imagemin.svgo()
+  ]))
     .pipe(gulp.dest('build/img'));
 };
 
@@ -76,9 +81,7 @@ const copyImages = () => {
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(squoosh({
-      webp: {}
-    }))
+  .pipe(webp({quality: 85}))
     .pipe(gulp.dest('build/img'));
 };
 

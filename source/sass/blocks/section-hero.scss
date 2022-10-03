@@ -3,20 +3,33 @@
     background-color: $turquoise-light-color;
   }
 
-  &--home-height {
-    min-height: 718px;
+  &--bg-image {
+    @include bg-image(
+      "../img/cards/features-cards.png",
+      no-repeat,
+      50%,
+      290%,
+      1764px 692px
+    );
+
+    @include webp-and-retina-bg-image(
+      "../img/cards/features-cards@2x.png",
+      "../img/cards/features-cards.webp",
+      "../img/cards/features-cards@2x.webp"
+    );
   }
 }
 
-.section-hero__home {
-  margin-top: 128px;
+.section-hero__home-page {
+  min-height: 578px;
+  @include margin-y(128px, 128px);
 
   @include bg-image(
     "../img/cards/front-cards.png",
     no-repeat,
     92%,
     50%,
-    contain
+    400px 578px
   );
   @include webp-and-retina-bg-image(
     "../img/cards/front-cards@2x.png",
@@ -25,20 +38,41 @@
   );
 }
 
+.section-hero__features-page {
+  min-height: 290px;
+  text-align: center;
+  @include padding-y(128px, 450px);
+}
+
 .section-hero__text-wrapper {
   display: flex;
   flex-direction: column;
   max-width: 600px;
+
+  &--features-page {
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
 .section-hero__title {
   margin: 16px 0;
-  @include font-setting(100px, 110%);
+  @include font-setting(80px, 110%);
+}
+
+.section-hero__subtitle {
+  @include margin-y(0, 8px);
 }
 
 .section-hero__text {
   @include margin-y(0, 32px);
   @include font-setting(24px, 180%);
+
+  &--features-page {
+    @include font-setting(20px, 180%);
+  }
 }
 
 .section-hero__list {
@@ -72,6 +106,11 @@
 .section-hero__links-wrapper {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+
+  &--features-page {
+    margin-top: 0;
+  }
 }
 
 .section-hero__link {

@@ -1,0 +1,91 @@
+.section-advantage {
+  border-top: 1px solid $grey-color;
+}
+
+.section-advantage__wrapper {
+  text-align: center;
+  @include padding-y(160px, 160px);
+}
+
+.section-advantage__text-wrapper {
+  margin-bottom: 96px;
+}
+
+.section-advantage__title {
+  @include margin-y(0, 16px);
+}
+
+.section-advantage__text {
+  margin: 0;
+  @include font-setting(20px, 180%);
+}
+
+.section-advantage__subtitle {
+  @include font-setting(40px, 120%);
+  @include margin-y(0, 8px);
+}
+
+.section-advantage__description {
+  margin: 0;
+  color: $base-black-opacity-50;
+  @include font-setting(18px, 180%);
+}
+
+.section-advantage__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, (370px));
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.section-advantage__item {
+  position: relative;
+  max-width: 370px;
+  margin: 0 15px 30px;
+  padding: 70px 40px 20px;
+  background-color: $grey-light-color;
+  border-radius: 20px;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translateX(-50%);
+    content: "";
+  }
+
+  &:nth-child(1) {
+    &::before {
+      background-image: url("../img/icons/features-icon-4.svg");
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      background-image: url("../img/icons/features-icon-5.svg");
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      background-image: url("../img/icons/features-icon-6.svg");
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      background-image: url("../img/icons/features-icon-2.svg");
+    }
+  }
+
+  &:nth-child(5) {
+    &::before {
+      background-image: url("../img/icons/features-icon-1.svg");
+    }
+  }
+}
