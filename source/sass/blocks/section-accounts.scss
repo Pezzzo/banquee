@@ -1,13 +1,48 @@
+.section-accounts {
+  &--home-page {
+    border-top: 1px solid $grey-color;
+  }
+}
+
 .section-accounts__wrapper {
-  margin-bottom: 160px;
+  &--home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    min-height: 1118px;
+    padding-top: 160px;
+    text-align: center;
+    @include margin-y(0, 160px);
+
+    @include bg-image(
+      "../img/cards/three-cards.png",
+      no-repeat,
+      50%,
+      512px,
+      500px 500px
+    );
+
+    @include webp-and-retina-bg-image(
+      "../img/cards/three-cards@2x.png",
+      "../img/cards/three-cards.webp",
+      "../img/cards/three-cards@2x.webp"
+    );
+  }
+
+  &--features-page {
+    margin-bottom: 160px;
+  }
 }
 
 .section-accounts__text-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  @include margin-y(0, 96px);
+  &--features-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include margin-y(0, 96px);
+  }
 }
 
 .section-accounts__subtitle {
@@ -16,10 +51,31 @@
 
 .section-accounts__title {
   @include margin-y(0, 16px);
-  @include font-setting(80px, 110%);
 }
 
 .section-accounts__text {
-  margin: 0;
   @include font-setting(20px, 180%);
+
+  &--home-page {
+    @include margin-y(0, 56px);
+  }
+
+  &--features-page {
+    margin: 0;
+  }
+}
+
+.section-accounts__nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: auto;
+}
+
+.section-accounts__button {
+  margin-right: 32px;
+}
+
+.section-accounts__link {
+  margin-right: 16px;
 }

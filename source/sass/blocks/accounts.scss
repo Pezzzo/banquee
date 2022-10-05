@@ -1,17 +1,28 @@
 .accounts__list {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+
+  &--compare-page {
+    display: grid;
+    grid-template-columns: 336px 1fr 1fr 1fr;
+    margin-bottom: 96px;
+    column-gap: 64px;
+  }
 }
 
 .accounts__item {
+  &--features-page {
+    max-width: 355px;
+  }
+}
+
+.accounts__content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: center;
-
-  &:not(:last-child) {
-    margin-right: 64px;
-  }
 }
 
 .accounts__popular-name {
@@ -27,6 +38,10 @@
 .accounts__img {
   width: 355px;
   margin-bottom: 20px;
+
+  &--compare-page {
+    width: 290px;
+  }
 }
 
 .accounts__name {
@@ -40,20 +55,22 @@
   @include margin-y(0, 8px);
 
   font-weight: bold;
-  font-family: $DMSans;
   @include font-setting(40px, 100%);
 }
 
 .accounts__description {
-  @include margin-y(0, 24px);
-
   color: $base-black-opacity-50;
+  @include margin-y(0, 24px);
   @include font-setting(16px, 160%);
+
+  &--compare-page {
+    max-width: 220px;
+    margin: auto;
+    margin-bottom: 24px;
+  }
 }
 
 .accounts__price-description {
-  @include font-setting(16px, 160%);
-
   color: $base-black-opacity-50;
-  font-family: $Inter;
+  @include font-setting(16px, 160%);
 }

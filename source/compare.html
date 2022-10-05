@@ -132,10 +132,10 @@
     <h1 class="visually-hidden">Сравнения</h1>
 
     <section class="section-hero section-hero--bg-color">
-      <div class="section-hero__wrapper wide-wrapper">
+      <div class="section-hero__wrapper section-hero__wrapper--compare-page wide-wrapper">
         <div class="section-hero__text-wrapper">
-          <p class="section-hero__subtitle">Compare Cards</p>
-          <h2 class="section-hero__title">The ideal card for you</h2>
+          <p class="section-hero__subtitle title title--small">Compare Cards</p>
+          <h2 class="section-hero__title title title--big">The ideal <br> card for you</h2>
         </div>
       </div>
     </section>
@@ -143,275 +143,342 @@
     <section class="section-compare">
       <div class="section-compare__wrapper wide-wrapper">
 
-        <div class="section-compare__account-selection">
-          <button class="section-compare__account-selection-button" type="button"
-            data-account-selection="Basic">Basic</button>
-          <button class="section-compare__account-selection-button" type="button"
-            data-account-selection="Premium">Premium</button>
-          <button class="section-compare__account-selection-button" type="button"
-            data-account-selection="Gold">Gold</button>
+        <div class="section-compare__account-selection account-selection">
+          <ul class="account-selection__list">
+            <li class="account-selection__item">
+              <button class="section-compare__button" type="button" data-account-selection="Basic">Basic</button>
+            </li>
+            <li class="account-selection__item">
+              <button class="section-compare__button" type="button" data-account-selection="Premium">Premium</button>
+            </li>
+            <li class="account-selection__item">
+              <button class="section-compare__button" type="button" data-account-selection="Gold">Gold</button>
+            </li>
+          </ul>
         </div>
 
-        <div class="accounts">
-          <ul class="accounts__list">
+        <div class="accounts accounts--compare-page">
+          <ul class="accounts__list accounts__list--compare-page">
+            <li class="accounts__item"></li>
             <li class="accounts__item" data-account-selection="Basic">
-              <h3 class="accounts__name">Basic <span class="accounts__popular-name">Popular</span></h3>
-              <p class="accounts__price">Free</p>
-              <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <picture>
-                <source type="image/webp" srcset="img/cards/basic-card.webp 1x, img/cards/basic-card@2x.webp 2x">
-                <img class="accounts__img" src="img/cards/basic-card.png" loading="lazy"
-                  srcset="img/cards/basic-card@2x.png 2x" width="290" height="174" alt="изображение банковской карты">
-              </picture>
-              <a class="accounts__link button" href="#">Get started</a>
+              <div class="accounts__content">
+                <h3 class="accounts__name title title--small">Basic <span class="accounts__popular-name">Popular</span>
+                </h3>
+                <p class="accounts__price title">Free</p>
+                <p class="accounts__description accounts__description--compare-page">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.</p>
+                <picture>
+                  <source type="image/webp" srcset="img/cards/basic-card.webp 1x, img/cards/basic-card@2x.webp 2x">
+                  <img class="accounts__img accounts__img--compare-page" src="img/cards/basic-card.png" loading="lazy"
+                    srcset="img/cards/basic-card@2x.png 2x" width="290" height="174" alt="изображение банковской карты">
+                </picture>
+                <a class="accounts__link button button--mod" href="#">Get started</a>
+              </div>
             </li>
             <li class="accounts__item" data-account-selection="Premium">
-              <h3 class="accounts__name">Premium</h3>
-              <p class="accounts__price">$5 <span class="accounts__price-description">per month</span></p>
-              <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <picture>
-                <source type="image/webp" srcset="img/cards/premium-card.webp 1x, img/cards/premium-card@2x.webp 2x">
-                <img class="accounts__img" src="img/cards/premium-card.png" loading="lazy"
-                  srcset="img/cards/premium-card@2x.png 2x" width="290" height="174" alt="изображение банковской карты">
-              </picture>
-              <a class="accounts__link button" href="#">Get started</a>
+              <div class="accounts__content">
+                <h3 class="accounts__name title title--small">Premium</h3>
+                <p class="accounts__price title">$5 <span class="accounts__price-description">per month</span></p>
+                <p class="accounts__description accounts__description--compare-page">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.</p>
+                <picture>
+                  <source type="image/webp" srcset="img/cards/premium-card.webp 1x, img/cards/premium-card@2x.webp 2x">
+                  <img class="accounts__img accounts__img--compare-page" src="img/cards/premium-card.png" loading="lazy"
+                    srcset="img/cards/premium-card@2x.png 2x" width="290" height="174"
+                    alt="изображение банковской карты">
+                </picture>
+                <a class="accounts__link button button--mod" href="#">Get started</a>
+              </div>
             </li>
             <li class="accounts__item" data-account-selection="Gold">
-              <h3 class="accounts__name">Gold</h3>
-              <p class="accounts__price">$10 <span class="accounts__price-description">per month</span></p>
-              <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <picture>
-                <source type="image/webp" srcset="img/cards/gold-card.webp 1x, img/cards/gold-card@2x.webp 2x">
-                <img class="accounts__img" src="img/cards/gold-card.png" loading="lazy"
-                  srcset="img/cards/gold-card@2x.png 2x" width="290" height="174" alt="изображение банковской карты">
-              </picture>
-              <a class="accounts__link button" href="#">Get started</a>
+              <div class="accounts__content">
+                <h3 class="accounts__name title title--small">Gold</h3>
+                <p class="accounts__price title">$10 <span class="accounts__price-description">per month</span></p>
+                <p class="accounts__description accounts__description--compare-page">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.</p>
+                <picture>
+                  <source type="image/webp" srcset="img/cards/gold-card.webp 1x, img/cards/gold-card@2x.webp 2x">
+                  <img class="accounts__img accounts__img--compare-page" src="img/cards/gold-card.png" loading="lazy"
+                    srcset="img/cards/gold-card@2x.png 2x" width="290" height="174" alt="изображение банковской карты">
+                </picture>
+                <a class="accounts__link button button--mod" href="#">Get started</a>
+              </div>
             </li>
           </ul>
         </div>
 
-        <div class="compare-accounts">
+        <div class="section-compare__options-wrapper">
 
-          <h3 class="compare-accounts__title">Credit Card</h3>
-          <ul class="compare-accounts__list">
-            <li class="compare-accounts__item">
-              <div class="compare-accounts__options">
-                <div class="compare-accounts__name-wrapper">
-                  <h4 class="compare-accounts__name">Physical Card</h4>
-                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Basic">
-                  <p class="compare-accounts__option-description">Optional</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Premium">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Gold">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
+          <h3 class="section-compare__title title title--small">Credit Card</h3>
+
+          <ul class="section-compare__list">
+            <li class="section-compare__item section-compare__item--1">
+              <h4 class="section-compare__name title">Physical Card</h4>
+              <p class="section-compare__name-description">Diam in arcu cursus euismod</p>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Basic">
+                <p class="section-compare__option-description">Optional</p>
               </div>
             </li>
-            <li class="compare-accounts__item">
-              <div class="compare-accounts__options">
-                <div class="compare-accounts__name-wrapper">
-                  <h4 class="compare-accounts__name">Virtual Card</h4>
-                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Basic">
-                  <p class="compare-accounts__option-description">-</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Premium">
-                  <p class="compare-accounts__option-description">Up to 2</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Gold">
-                  <p class="compare-accounts__option-description">Unlimited</p>
-                </div>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Premium">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
               </div>
             </li>
-            <li class="compare-accounts__item">
-              <div class="compare-accounts__options">
-                <div class="compare-accounts__name-wrapper">
-                  <h4 class="compare-accounts__name">Contactless Payments</h4>
-                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Basic">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Premium">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Gold">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-              </div>
-            </li>
-            <li class="compare-accounts__item">
-              <div class="compare-accounts__options">
-                <div class="compare-accounts__name-wrapper">
-                  <h4 class="compare-accounts__name">Mobile Payments</h4>
-                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Basic">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Premium">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Gold">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Gold">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
               </div>
             </li>
           </ul>
 
-          <h3 class="compare-accounts__title">Bank Account</h3>
-          <ul class="compare-accounts__list">
-            <li class="compare-accounts__item">
-              <div class="compare-accounts__options">
-                <div class="compare-accounts__name-wrapper">
-                  <h4 class="compare-accounts__name">Free Payments Worldwide</h4>
-                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Basic">
-                  <p class="compare-accounts__option-description">-</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Premium">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Gold">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
+          <ul class="section-compare__list">
+            <li class="section-compare__item section-compare__item--2">
+              <h4 class="section-compare__name title">Virtual Card</h4>
+              <p class="section-compare__name-description">Diam in arcu cursus euismod</p>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Basic">
+                <p class="section-compare__option-description">-</p>
               </div>
             </li>
-            <li class="compare-accounts__item">
-              <div class="compare-accounts__options">
-                <div class="compare-accounts__name-wrapper">
-                  <h4 class="compare-accounts__name">Free ATM withdrawls</h4>
-                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Basic">
-                  <p class="compare-accounts__option-description">2</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Premium">
-                  <p class="compare-accounts__option-description">5</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Gold">
-                  <p class="compare-accounts__option-description">10</p>
-                </div>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Premium">
+                <p class="section-compare__option-description">Up to 2</p>
               </div>
             </li>
-            <li class="compare-accounts__item">
-              <div class="compare-accounts__options">
-                <div class="compare-accounts__name-wrapper">
-                  <h4 class="compare-accounts__name">Mobile Banking</h4>
-                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Basic">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Premium">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Gold">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Gold">
+                <p class="section-compare__option-description">Unlimited</p>
               </div>
             </li>
           </ul>
 
-          <h3 class="compare-accounts__title">Extra Features</h3>
-          <ul class="compare-accounts__list">
-            <li class="compare-accounts__item">
-              <div class="compare-accounts__options">
-                <div class="compare-accounts__name-wrapper">
-                  <h4 class="compare-accounts__name">Saving Accounts</h4>
-                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Basic">
-                  <p class="compare-accounts__option-description">2</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Premium">
-                  <p class="compare-accounts__option-description">5</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Gold">
-                  <p class="compare-accounts__option-description">Unlimited</p>
-                </div>
+          <ul class="section-compare__list">
+            <li class="section-compare__item section-compare__item--3">
+              <h4 class="section-compare__name title">Contactless Payments</h4>
+              <p class="section-compare__name-description">Diam in arcu cursus euismod</p>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Basic">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
               </div>
             </li>
-            <li class="compare-accounts__item">
-              <div class="compare-accounts__options">
-                <div class="compare-accounts__name-wrapper">
-                  <h4 class="compare-accounts__name"></h4>
-                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Basic">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Premium">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Gold">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Premium">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
               </div>
             </li>
-            <li class="compare-accounts__item">
-              <div class="compare-accounts__options">
-                <div class="compare-accounts__name-wrapper">
-                  <h4 class="compare-accounts__name"></h4>
-                  <p class="compare-accounts__name-description">Diam in arcu cursus euismod</p>
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Basic">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Premium">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
-                <div class="compare-accounts__option" data-account-selection="Gold">
-                  <img class="compare-accounts__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
-                    alt="галочка">
-                </div>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Gold">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
               </div>
             </li>
           </ul>
 
+          <ul class="section-compare__list">
+            <li class="section-compare__item section-compare__item--4">
+              <h4 class="section-compare__name title">Mobile Payments</h4>
+              <p class="section-compare__name-description">Diam in arcu cursus euismod</p>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Basic">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Premium">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Gold">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+          </ul>
         </div>
+
+        <div class="section-compare__options-wrapper">
+
+          <h3 class="section-compare__title title title--small">Bank Account</h3>
+
+          <ul class="section-compare__list">
+            <li class="section-compare__item section-compare__item--5">
+              <h4 class="section-compare__name title">Free Payments Worldwide</h4>
+              <p class="section-compare__name-description">Diam in arcu cursus euismod</p>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Basic">
+                <p class="section-compare__option-description">-</p>
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Premium">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Gold">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+          </ul>
+
+          <ul class="section-compare__list">
+            <li class="section-compare__item section-compare__item--6">
+              <h4 class="section-compare__name title">Free ATM withdrawls</h4>
+              <p class="section-compare__name-description">Diam in arcu cursus euismod</p>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Basic">
+                <p class="section-compare__option-description">2</p>
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Premium">
+                <p class="section-compare__option-description">5</p>
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Gold">
+                <p class="section-compare__option-description">10</p>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="section-compare__list">
+            <li class="section-compare__item section-compare__item--7">
+              <h4 class="section-compare__name title">Mobile Banking</h4>
+              <p class="section-compare__name-description">Diam in arcu cursus euismod</p>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Basic">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Premium">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Gold">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section-compare__options-wrapper">
+
+          <h3 class="section-compare__title title title--small">Extra Features</h3>
+
+          <ul class="section-compare__list">
+            <li class="section-compare__item section-compare__item--8">
+              <h4 class="section-compare__name title">Saving Accounts</h4>
+              <p class="section-compare__name-description">Diam in arcu cursus euismod</p>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Basic">
+                <p class="section-compare__option-description">2</p>
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Premium">
+                <p class="section-compare__option-description">5</p>
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Gold">
+                <p class="section-compare__option-description">Unlimited</p>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="section-compare__list">
+            <li class="section-compare__item section-compare__item--9">
+              <h4 class="section-compare__name title">Advanced Statistics</h4>
+              <p class="section-compare__name-description">Diam in arcu cursus euismod</p>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Basic">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Premium">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Gold">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+          </ul>
+
+          <ul class="section-compare__list">
+            <li class="section-compare__item section-compare__item--10">
+              <h4 class="section-compare__name title">Premium Parnter Offers</h4>
+              <p class="section-compare__name-description">Diam in arcu cursus euismod</p>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Basic">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Premium">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+            <li class="section-compare__item">
+              <div class="section-compare__option" data-account-selection="Gold">
+                <img class="section-compare__option-img" src="img/icons/check-mark-light.svg" width="24" height="24"
+                  alt="галочка">
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
     <section class="section-contact">
-      <div class="section-contact__wrapper narrow-wrapper">
+      <div class="section-contact__wrapper">
         <div class="section-contact__text-wrapper">
-          <h2 class="section-contact__title">Still have questions?</h2>
+          <h2 class="section-contact__title title">Still have questions?</h2>
           <p class="section-contact__text">We are here to help.</p>
         </div>
         <div class="section-contact__tel">
-          <a class="section-contact__tel-link" href="tel:+49176123456">+49 176 123 456</a>
+          <a class="section-contact__tel-link title" href="tel:+49176123456">+49 176 123 456</a>
           <p class="section-contact__description">Support Hotline</p>
         </div>
         <div class="section-contact__mail">
-          <a class="section-contact__mail-link" href="mailto:help@banquee.com">help@banquee.com</a>
+          <a class="section-contact__mail-link title" href="mailto:help@banquee.com">help@banquee.com</a>
           <p class="section-contact__description">Support Email</p>
         </div>
-        <button class="section-contact__chat" type="button">Chat with us</button>
+        <button class="section-contact__chat-button title" type="button">Chat with us</button>
       </div>
     </section>
 
@@ -496,9 +563,10 @@
             - Powered by
             <a class="section-copyright__hosting-link" href="https://webflow.com/" target="_blank">Webflow</a>
           </div>
-          <a class="section-copyright__hosting-link section-copyright__author" href="https://github.com/Pezzzo" target="_blank">
-            <span>Pezzzo</span><img class="section-copyright__github-logo"
-              src="img/github.png" width="30" height="30" alt="логотип github">
+          <a class="section-copyright__hosting-link section-copyright__author" href="https://github.com/Pezzzo"
+            target="_blank">
+            <span>Pezzzo</span><img class="section-copyright__github-logo" src="img/github.png" width="30" height="30"
+              alt="логотип github">
           </a>
           <div class="section-copyright__text-wrapper">
             <p class="section-copyright__text section-copyright__text--mod">Impressum</p>

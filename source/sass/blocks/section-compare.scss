@@ -1,0 +1,115 @@
+.section-compare__options-wrapper {
+  margin-bottom: 96px;
+}
+
+.section-compare__list {
+  display: grid;
+  grid-template-columns: 336px 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+  column-gap: 64px;
+  @include padding-y(32px, 32px);
+
+  border-top: 1px solid $grey-color;
+}
+
+.section-compare__item {
+  &:first-child {
+    position: relative;
+    justify-self: start;
+    margin-left: 66px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -66px;
+    width: 50px;
+    height: 50px;
+    content: "";
+  }
+
+  &--1 {
+    &::before {
+      background: url("../img/icons/compare-icon-1.svg") 50% 50% no-repeat;
+    }
+  }
+
+  &--2 {
+    &::before {
+      background: url("../img/icons/compare-icon-2.svg") 50% 50% no-repeat;
+    }
+  }
+
+  &--3 {
+    &::before {
+      background: url("../img/icons/compare-icon-3.svg") 50% 50% no-repeat;
+    }
+  }
+
+  &--4 {
+    &::before {
+      background: url("../img/icons/compare-icon-4.svg") 50% 50% no-repeat;
+    }
+  }
+
+  &--5 {
+    &::before {
+      background: url("../img/icons/compare-icon-5.svg") 50% 50% no-repeat;
+    }
+  }
+
+  &--6 {
+    &::before {
+      background: url("../img/icons/compare-icon-6.svg") 50% 50% no-repeat;
+    }
+  }
+
+  &--7 {
+    &::before {
+      background: url("../img/icons/compare-icon-7.svg") 50% 50% no-repeat;
+    }
+  }
+
+  &--8 {
+    &::before {
+      background: url("../img/icons/compare-icon-8.svg") 50% 50% no-repeat;
+    }
+  }
+
+  &--9 {
+    &::before {
+      background: url("../img/icons/compare-icon-9.svg") 50% 50% no-repeat;
+    }
+  }
+
+  &--10 {
+    &::before {
+      background: url("../img/icons/compare-icon-10.svg") 50% 50% no-repeat;
+    }
+  }
+}
+
+.section-compare__title {
+  @include margin-y(0, 16px);
+}
+
+.section-compare__name {
+  @include font-setting(18px, 140%);
+
+  margin: 0;
+}
+
+.section-compare__name-description {
+  margin: 0;
+  color: $base-black-opacity-50;
+  @include font-setting(14px, 160%);
+}
+
+.section-compare__option-description {
+  margin: 0;
+  @include font-setting(16px, 160%);
+}

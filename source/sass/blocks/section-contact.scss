@@ -1,0 +1,67 @@
+.section-contact {
+  padding: 0 40px;
+}
+
+.section-contact__wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 130px;
+  margin: 0 auto;
+  margin-bottom: 96px;
+  color: $base-white;
+  background-color: $turquoise-color;
+  border-radius: 8px;
+}
+
+.section-contact__text-wrapper {
+  margin-right: 126px;
+  margin-left: 32px;
+}
+
+.section-contact__tel {
+  margin-right: 152px;
+}
+
+.section-contact__mail {
+  margin-right: 96px;
+}
+
+.section-contact__mail-link,
+.section-contact__description,
+.section-contact__tel-link,
+.section-contact__text,
+.section-contact__title {
+  margin: 0;
+}
+
+.section-contact__title {
+  @include font-setting(28px, 120%);
+}
+
+.section-contact__text {
+  @include font-setting(18px, 180%);
+}
+
+.section-contact__mail-link,
+.section-contact__tel-link {
+  color: $base-white;
+  @include font-setting(18px, 140%);
+}
+
+.section-contact__description {
+  @include font-setting(14px, 160%);
+}
+
+.section-contact__chat-button {
+  margin-right: 32px;
+  padding: 16px 24px;
+  color: $base-white;
+  background-color: $base-black;
+  border-radius: 6px;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    background-color: $base-black-opacity-50;
+  }
+}

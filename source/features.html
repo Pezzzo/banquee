@@ -131,11 +131,11 @@
 
     <h1 class="visually-hidden">Особенности</h1>
 
-    <section class="section-hero section-hero--bg-image section-hero--bg-color">
-      <div class="section-hero__features-page narrow-wrapper">
+    <section class="section-hero section-hero--features-page-bg section-hero--bg-color">
+      <div class="section-hero__wrapper section-hero__wrapper--features-page narrow-wrapper">
         <div class="section-hero__text-wrapper section-hero__text-wrapper--features-page">
           <p class="section-hero__subtitle title title--small">Features</p>
-          <h2 class="section-hero__title title">All in one card.</h2>
+          <h2 class="section-hero__title title title--big">All in one card.</h2>
           <p class="section-hero__text section-hero__text--features-page">Senectus et netus et malesuada fames ac turpis.
             <br>
             Sagittis vitae et leo duis ut diam.</p>
@@ -152,7 +152,7 @@
         <div class="section-features__block transactions">
           <div class="section-features__text-wrapper section-features__text-wrapper--features-page">
             <p class="section-features__subtitle title title--small">Transactions</p>
-            <h2 class="section-features__title section-features__title--features-margin title title--big">Send & receive money instantly</h2>
+            <h2 class="section-features__title section-features__title--features-margin title title--medium">Send & receive money instantly</h2>
             <p class="section-features__text section-features__text--features-page">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
               Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             <ul class="section-features__list">
@@ -178,7 +178,7 @@
         <div class="section-features__block cards">
           <div class="section-features__text-wrapper section-features__text-wrapper--features-page">
             <p class="section-features__subtitle title title--small">Cards</p>
-            <h2 class="section-features__title section-features__title--features-margin title title--big">Manage your cards</h2>
+            <h2 class="section-features__title section-features__title--features-margin title title--medium">Manage your cards</h2>
             <p class="section-features__text section-features__text--features-page">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
               Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             <ul class="section-features__list">
@@ -204,7 +204,7 @@
         <div class="section-features__block advanced-statistics">
           <div class="section-features__text-wrapper section-features__text-wrapper--features-page">
             <p class="section-features__subtitle title title--small">Advanced Statistics</p>
-            <h2 class="section-features__title section-features__title--features-margin title title--big">Keep control over your money</h2>
+            <h2 class="section-features__title section-features__title--features-margin title title--medium">Keep control over your money</h2>
             <p class="section-features__text section-features__text--features-page">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
               Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             <ul class="section-features__list">
@@ -230,7 +230,7 @@
         <div class="section-features__block saving-accounts">
           <div class="section-features__text-wrapper section-features__text-wrapper--features-page">
             <p class="section-features__subtitle title title--small">Saving Accounts</p>
-            <h2 class="section-features__title section-features__title--features-margin title title--big">Lorem et ipsum dolor</h2>
+            <h2 class="section-features__title section-features__title--features-margin title title--medium">Lorem et ipsum dolor</h2>
             <p class="section-features__text section-features__text--features-page">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
               Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             <ul class="section-features__list">
@@ -259,7 +259,7 @@
     <section class="section-advantage">
       <div class="section-advantage__wrapper narrow-wrapper">
         <div class="section-advantage__text-wrapper">
-          <h2 class="section-advantage__title title title--big">All in one bank. Really.</h2>
+          <h2 class="section-advantage__title title title--medium">All in one bank. Really.</h2>
           <p class="section-advantage__text">Senectus et netus et malesuada fames ac turpis.
             <br>
             Sagittis vitae et leo duis ut diam.</p>
@@ -292,48 +292,54 @@
     </section>
 
     <section class="section-accounts">
-      <div class="section-accounts__wrapper narrow-wrapper">
-        <div class="section-accounts__text-wrapper">
-          <p class="section-accounts__subtitle  title title--small">Accounts</p>
-          <h2 class="section-accounts__title  title title--big">Choose your card.</h2>
-          <p class="section-accounts__text">Senectus et netus et malesuada fames ac turpis.
+      <div class="section-accounts__wrapper section-accounts__wrapper--features-page narrow-wrapper">
+        <div class="section-accounts__text-wrapper section-accounts__text-wrapper--features-page">
+          <p class="section-accounts__subtitle title title--small">Accounts</p>
+          <h2 class="section-accounts__title title title--medium">Choose your card.</h2>
+          <p class="section-accounts__text section-accounts__text--features-page">Senectus et netus et malesuada fames ac turpis.
             <br>
             Sagittis vitae et leo duis ut diam.</p>
         </div>
         <div class="accounts">
           <ul class="accounts__list">
-            <li class="accounts__item">
-              <h3 class="accounts__name title title--small">Basic <span class="accounts__popular-name">Popular</span></h3>
-              <p class="accounts__price title">Free</p>
-              <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <picture>
-                <source type="image/webp" srcset="img/cards/basic-card.webp 1x, img/cards/basic-card@2x.webp 2x">
-                <img class="accounts__img" src="img/cards/basic-card.png" loading="lazy"
-                  srcset="img/cards/basic-card@2x.png 2x" width="355" height="213" alt="изображение банковской карты">
-              </picture>
-              <a class="accounts__link button" href="#">Get started</a>
+            <li class="accounts__item accounts__item--features-page">
+              <div class="accounts__content">
+                <h3 class="accounts__name title title--small">Basic <span class="accounts__popular-name">Popular</span></h3>
+                <p class="accounts__price title">Free</p>
+                <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <picture>
+                  <source type="image/webp" srcset="img/cards/basic-card.webp 1x, img/cards/basic-card@2x.webp 2x">
+                  <img class="accounts__img" src="img/cards/basic-card.png" loading="lazy"
+                    srcset="img/cards/basic-card@2x.png 2x" width="355" height="213" alt="изображение банковской карты">
+                </picture>
+                <a class="accounts__link button" href="#">Get started</a>
+              </div>
             </li>
-            <li class="accounts__item">
-              <h3 class="accounts__name title title--small">Premium</h3>
-              <p class="accounts__price title">$5 <span class="accounts__price-description">per month</span></p>
-              <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <picture>
-                <source type="image/webp" srcset="img/cards/premium-card.webp 1x, img/cards/premium-card@2x.webp 2x">
-                <img class="accounts__img" src="img/cards/premium-card.png" loading="lazy"
-                  srcset="img/cards/premium-card@2x.png 2x" width="355" height="213" alt="изображение банковской карты">
-              </picture>
-              <a class="accounts__link button" href="#">Get started</a>
+            <li class="accounts__item accounts__item--features-page">
+              <div class="accounts__content">
+                <h3 class="accounts__name title title--small">Premium</h3>
+                <p class="accounts__price title">$5 <span class="accounts__price-description">per month</span></p>
+                <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <picture>
+                  <source type="image/webp" srcset="img/cards/premium-card.webp 1x, img/cards/premium-card@2x.webp 2x">
+                  <img class="accounts__img" src="img/cards/premium-card.png" loading="lazy"
+                    srcset="img/cards/premium-card@2x.png 2x" width="355" height="213" alt="изображение банковской карты">
+                </picture>
+                <a class="accounts__link button" href="#">Get started</a>
+              </div>
             </li>
-            <li class="accounts__item">
-              <h3 class="accounts__name title title--small">Gold</h3>
-              <p class="accounts__price title">$10 <span class="accounts__price-description">per month</span></p>
-              <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <picture>
-                <source type="image/webp" srcset="img/cards/gold-card.webp 1x, img/cards/gold-card@2x.webp 2x">
-                <img class="accounts__img" src="img/cards/gold-card.png" loading="lazy"
-                  srcset="img/cards/gold-card@2x.png 2x" width="355" height="213" alt="изображение банковской карты">
-              </picture>
-              <a class="accounts__link button" href="#">Get started</a>
+            <li class="accounts__item accounts__item--features-page">
+              <div class="accounts__content">
+                <h3 class="accounts__name title title--small">Gold</h3>
+                <p class="accounts__price title">$10 <span class="accounts__price-description">per month</span></p>
+                <p class="accounts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <picture>
+                  <source type="image/webp" srcset="img/cards/gold-card.webp 1x, img/cards/gold-card@2x.webp 2x">
+                  <img class="accounts__img" src="img/cards/gold-card.png" loading="lazy"
+                    srcset="img/cards/gold-card@2x.png 2x" width="355" height="213" alt="изображение банковской карты">
+                </picture>
+                <a class="accounts__link button" href="#">Get started</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -343,7 +349,7 @@
     <section class="section-cta">
       <div class="section-cta__wrapper narrow-wrapper">
         <div class="section-cta__content-wrapper">
-          <h2 class="section-cta__title title title--big">One app. <br> One banking.</h2>
+          <h2 class="section-cta__title title title--medium">One app. <br> One banking.</h2>
           <p class="section-cta__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
           <ul class="section-cta__list">
@@ -375,7 +381,7 @@
     <section class="section-faq">
       <div class="section-faq__wrapper narrow-wrapper">
         <div class="section-faq__contacts">
-          <h2 class="section-faq__title title title--big">Need help?</h2>
+          <h2 class="section-faq__title title title--medium">Need help?</h2>
           <ul class="section-faq__list">
             <li class="section-faq__item">
               <a class="section-faq__tel-link title" href="tel:+49176123456">+49 176 123 456</a>

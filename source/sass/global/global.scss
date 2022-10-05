@@ -24,16 +24,8 @@ img {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border: 0;
-  clip: rect(0 0 0);
-  clip-path: inset(100%);
+  position: fixed;
+  transform: scale(0);
 }
 
 .uppercase-mod {
@@ -44,4 +36,8 @@ button {
   background-color: inherit;
   border: none;
   cursor: pointer;
+}
+
+.display-none {
+  display: none;
 }

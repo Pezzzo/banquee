@@ -3,7 +3,7 @@
     background-color: $turquoise-light-color;
   }
 
-  &--bg-image {
+  &--features-page-bg {
     @include bg-image(
       "../img/cards/features-cards.png",
       no-repeat,
@@ -20,28 +20,49 @@
   }
 }
 
-.section-hero__home-page {
-  min-height: 578px;
-  @include margin-y(128px, 128px);
+.section-hero__wrapper {
+  &--home-page {
+    min-height: 578px;
+    @include margin-y(128px, 128px);
 
-  @include bg-image(
-    "../img/cards/front-cards.png",
-    no-repeat,
-    92%,
-    50%,
-    400px 578px
-  );
-  @include webp-and-retina-bg-image(
-    "../img/cards/front-cards@2x.png",
-    "../img/cards/front-cards.webp",
-    "../img/cards/front-cards@2x.webp"
-  );
-}
+    @include bg-image(
+      "../img/cards/front-cards.png",
+      no-repeat,
+      92%,
+      50%,
+      400px 578px
+    );
+    @include webp-and-retina-bg-image(
+      "../img/cards/front-cards@2x.png",
+      "../img/cards/front-cards.webp",
+      "../img/cards/front-cards@2x.webp"
+    );
+  }
 
-.section-hero__features-page {
-  min-height: 290px;
-  text-align: center;
-  @include padding-y(128px, 450px);
+  &--features-page {
+    min-height: 290px;
+    text-align: center;
+    @include padding-y(128px, 450px);
+  }
+
+  &--compare-page {
+    min-height: 216px;
+    margin-bottom: 88px;
+    @include padding-y(128px, 128px);
+
+    @include bg-image(
+      "../img/cards/compare-cards.png",
+      no-repeat,
+      85%,
+      100%,
+      514px 368px
+    );
+    @include webp-and-retina-bg-image(
+      "../img/cards/compare-cards@2x.png",
+      "../img/cards/compare-cards.webp",
+      "../img/cards/compare-cards@2x.webp"
+    );
+  }
 }
 
 .section-hero__text-wrapper {
@@ -59,7 +80,6 @@
 
 .section-hero__title {
   margin: 16px 0;
-  @include font-setting(80px, 110%);
 }
 
 .section-hero__subtitle {
