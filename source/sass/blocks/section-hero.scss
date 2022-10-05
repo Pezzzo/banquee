@@ -45,11 +45,15 @@
     @include padding-y(128px, 450px);
   }
 
+  &--support-page,
   &--compare-page {
     min-height: 216px;
-    margin-bottom: 88px;
-    @include padding-y(128px, 128px);
 
+    @include padding-y(128px, 128px);
+  }
+
+  &--compare-page {
+    margin-bottom: 88px;
     @include bg-image(
       "../img/cards/compare-cards.png",
       no-repeat,
@@ -62,6 +66,27 @@
       "../img/cards/compare-cards.webp",
       "../img/cards/compare-cards@2x.webp"
     );
+  }
+
+  &--support-page {
+    margin-bottom: 96px;
+    @include bg-image(
+      "../img/support-app.png",
+      no-repeat,
+      85%,
+      100%,
+      380px 388px
+    );
+    @include webp-and-retina-bg-image(
+      "../img/support-app@2x.png",
+      "../img/support-app.webp",
+      "../img/support-app@2x.webp"
+    );
+  }
+
+  &--blog-page {
+    text-align: center;
+    @include padding-y(96px, 96px);
   }
 }
 

@@ -18,7 +18,14 @@
 .section-nav__link {
   color: $base-black-opacity-50;
   font-family: $Inter;
+  transition: all 0.2s ease-in-out;
   @include font-setting(16px, 160%);
+
+  &:hover {
+    padding-left: 6px;
+    color: $turquoise-color;
+    text-shadow: $turquoise-color 0 0 3px;
+  }
 }
 
 .section-nav__list {

@@ -1,0 +1,42 @@
+.section-socials {
+  max-width: 208px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-socials__wrapper {
+  margin-bottom: 160px;
+}
+
+.section-socials__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.section-socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 22px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  fill: $base-black;
+
+  &:hover {
+    fill: $turquoise-color;
+  }
+}
+
+.section-socials__title {
+  @include margin-y(0, 16px);
+}
+
+.section-socials__socials-logo {
+  &--facebook,
+  &--instagram {
+    margin-bottom: 2px;
+  }
+}

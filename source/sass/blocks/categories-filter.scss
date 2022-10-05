@@ -1,0 +1,35 @@
+.categories-filter {
+  max-width: 280px;
+  min-height: 230px;
+  padding: 32px;
+  background-color: $grey-light-color;
+  border-radius: 10px;
+}
+
+.categories-filter__title {
+  @include margin-y(0, 32px);
+  @include font-setting(18px, 140%);
+}
+
+.categories-filter__list {
+  margin: 0;
+  padding: 0;
+}
+
+.categories-filter__item {
+  margin-bottom: 16px;
+}
+
+.categories-filter__category {
+  margin: 0;
+  padding: 0;
+  color: $base-black-opacity-50;
+  transition: all 0.2s ease-in-out;
+  @include font-setting(16px, 160%);
+
+  &:hover {
+    padding-left: 6px;
+    color: $turquoise-color;
+    text-shadow: $turquoise-color 0 0 3px;
+  }
+}

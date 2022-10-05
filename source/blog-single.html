@@ -131,27 +131,29 @@
 
     <h1 class="visually-hidden">Пост</h1>
 
-    <section class="section-post">
-      <div class="section-post__wrapper narrow-wrapper">
-        <div class="post"></div>
+    <section class="section-single-post">
+      <div class="section-single-post__wrapper narrow-wrapper">
+        <div class="post">
+
+        </div>
       </div>
     </section>
 
     <section class="section-socials">
       <div class="section-socials__wrapper">
-        <h2 class="section-socials__title">Share article</h2>
+        <h2 class="section-socials__title title title--small">Share article</h2>
         <ul class="section-socials__list">
           <li class="section-socials__item">
             <a class="section-socials__link" href="#">
-              <svg class="section-socials__socials-logo" width="30" height="22" aria-hidden="true" focusable="false">
-                <use href="img/sprite.svg#twitter-link">
+              <svg class="section-socials__socials-logo" width="20" height="20" aria-hidden="true" focusable="false">
+                <use class="section-socials__socials-logo" href="img/sprite.svg#twitter-link">
                 </use>
               </svg>
             </a>
           </li>
           <li class="section-socials__item">
             <a class="section-socials__link" href="#">
-              <svg class="section-socials__socials-logo" width="30" height="22" aria-hidden="true" focusable="false">
+              <svg class="section-socials__socials-logo section-socials__socials-logo--facebook" width="20" height="20" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#facebook-link">
                 </use>
               </svg>
@@ -159,7 +161,7 @@
           </li>
           <li class="section-socials__item">
             <a class="section-socials__link" href="#">
-              <svg class="section-socials__socials-logo" width="30" height="22" aria-hidden="true" focusable="false">
+              <svg class="section-socials__socials-logo" width="20" height="20" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#linkedin-link">
                 </use>
               </svg>
@@ -167,7 +169,7 @@
           </li>
           <li class="section-socials__item">
             <a class="section-socials__link" href="#">
-              <svg class="section-socials__socials-logo" width="30" height="22" aria-hidden="true" focusable="false">
+              <svg class="section-socials__socials-logo section-socials__socials-logo--instagram" width="20" height="20" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#instagram-link">
                 </use>
               </svg>
@@ -177,14 +179,62 @@
       </div>
     </section>
 
-    <section class="section-related-articles">
-      <div class="section-related-articles__wrapper narrow-wrapper">
-        <div>
-          <h2 class="section-related-articles__title">Related Articles</h2>
-          <a class="section-related-articles__link" href="blog.html">All Articles</a>
+    <section class="section-blog section-blog--blog-single">
+      <div class="section-blog__wrapper narrow-wrapper">
+        <div class="section-blog__text">
+          <h2 class="section-blog__title title title--small-medium">Related Articles</h2>
+          <a class="section-blog__link link link--arrow" href="blog.html">All Articles</a>
         </div>
         <div class="blog">
-
+          <ul class="blog__list">
+            <li class="blog__item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/blog-images/blog-image-1.webp 1x, img/blog-images/blog-image-1@2x.webp 2x">
+                <img class="blog__img" src="img/blog-images/blog-image-1.jpg" loading="lazy"
+                  srcset="img/blog-images/blog-image-1@2x.jpg 2x" width="380" height="380" alt="бесконтактная оплата">
+              </picture>
+              <h3 class="blog__subtitle title">How To Start Using Banko For Your Startup</h3>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi
+                morbi.</p>
+              <div class="blog__tags-wrapper">
+                <p class="blog__tag">App</p>
+                <p class="blog__tag">Technology</p>
+              </div>
+            </li>
+            <li class="blog__item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/blog-images/blog-image-2.webp 1x, img/blog-images/blog-image-2@2x.webp 2x">
+                <img class="blog__img" src="img/blog-images/blog-image-2.jpg" loading="lazy"
+                  srcset="img/blog-images/blog-image-2@2x.jpg 2x" width="380" height="380" alt="девушка с телефоном">
+              </picture>
+              <h3 class="blog__subtitle title">10 Things Nobody Told You About Banko</h3>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi
+                morbi.</p>
+              <div class="blog__tags-wrapper">
+                <p class="blog__tag">Technology</p>
+              </div>
+            </li>
+            <li class="blog__item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/blog-images/blog-image-3.webp 1x, img/blog-images/blog-image-3@2x.webp 2x">
+                <img class="blog__img" src="img/blog-images/blog-image-3.jpg" loading="lazy"
+                  srcset="img/blog-images/blog-image-3@2x.jpg 2x" width="380" height="380" alt="кошелёк с деньгами">
+              </picture>
+              <h3 class="blog__subtitle title">How To Start Using Banko For Your Startup</h3>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi
+                morbi.</p>
+              <div class="blog__tags-wrapper">
+                <p class="blog__tag">App</p>
+                <p class="blog__tag">Product</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -283,7 +333,7 @@
 
     </div>
   </footer>
-
+<script src="js/single-post.js"></script>
 </body>
 
 </html>

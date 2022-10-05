@@ -5,6 +5,10 @@
     @include font-setting(20px, 120%);
   }
 
+  &--small-medium {
+    @include font-setting(40px, 120%);
+  }
+
   &--medium {
     @include font-setting(60px, 110%);
   }

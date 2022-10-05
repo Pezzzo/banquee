@@ -1,5 +1,11 @@
+.section-blog {
+  &--blog-single {
+    border-top: 1px solid $grey-color;
+  }
+}
+
 .section-blog__wrapper {
-  @include padding-y(160px, 160px);
+  @include padding-y(160px, 96px);
 }
 
 .section-blog__text {

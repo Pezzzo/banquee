@@ -28,9 +28,14 @@
 }
 
 .accordion__answer {
-  color: $base-black-opacity-50;
-  @include font-setting(16px, 160%);
-  @include margin-y(16px, 0);
+  display: none;
+
+  &--active {
+    display: block;
+    color: $base-black-opacity-50;
+    @include font-setting(16px, 160%);
+    @include margin-y(16px, 0);
+  }
 }
 
 .accordion__item {

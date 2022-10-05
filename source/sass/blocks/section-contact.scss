@@ -20,11 +20,35 @@
 }
 
 .section-contact__tel {
+  position: relative;
   margin-right: 152px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -56px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/icons/phone-white-icon.svg") 50% 50% no-repeat;
+    transform: translateY(-50%);
+    content: "";
+  }
 }
 
 .section-contact__mail {
+  position: relative;
   margin-right: 96px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -56px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/icons/mail-white-icon.svg") 50% 50% no-repeat;
+    transform: translateY(-50%);
+    content: "";
+  }
 }
 
 .section-contact__mail-link,
