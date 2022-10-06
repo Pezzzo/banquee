@@ -1,4 +1,6 @@
 .section-features__wrapper {
+  padding-right: 80px;
+  padding-left: 80px;
   @include padding-y(160px, 0);
 
   &--home-page {

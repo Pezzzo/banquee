@@ -74,23 +74,23 @@
           <h2 class="section-posts__title title">Categories</h2>
           <ul class="section-posts__list">
             <li class="section-posts__item">
-              <button class="section-posts__button" type="button">All</button>
+              <button class="section-posts__button section-posts__button--active" type="button" data-category="all">All</button>
             </li>
             <li class="section-posts__item">
-              <button class="section-posts__button" type="button">Product</button>
+              <button class="section-posts__button" type="button" data-category="product">Product</button>
             </li>
             <li class="section-posts__item">
-              <button class="section-posts__button" type="button">Technology</button>
+              <button class="section-posts__button" type="button" data-category="technology">Technology</button>
             </li>
             <li class="section-posts__item">
-              <button class="section-posts__button" type="button">App</button>
+              <button class="section-posts__button" type="button" data-category="app">App</button>
             </li>
           </ul>
         </div>
         <div class="blog">
           <ul class="blog__list">
-            <li class="blog__item">
-              <a class="blog__link" href="blog-single.html">
+            <li class="blog__item blog__item--show app technology">
+              <a class="blog__link" data-blog="1" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="img/blog-images/blog-image-1.webp 1x, img/blog-images/blog-image-1@2x.webp 2x">
@@ -98,17 +98,17 @@
                     srcset="img/blog-images/blog-image-1@2x.jpg 2x" width="380" height="380" alt="бесконтактная оплата">
                 </picture>
               </a>
-              <h3 class="blog__subtitle">How To Start Using Banko For Your Startup</h3>
-              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              <h3 class="blog__subtitle" data-blog="1">How To Start Using Banko For Your Startup</h3>
+              <p class="blog__text" data-blog="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi
                 morbi.</p>
               <div class="blog__tags-wrapper">
-                <p class="blog__tag">App</p>
-                <p class="blog__tag">Technology</p>
+                <p class="blog__tag app">App</p>
+                <p class="blog__tag technology">Technology</p>
               </div>
             </li>
-            <li class="blog__item">
-              <a class="blog__link" href="blog-single.html">
+            <li class="blog__item blog__item--show technology">
+              <a class="blog__link" data-blog="2" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="img/blog-images/blog-image-2.webp 1x, img/blog-images/blog-image-2@2x.webp 2x">
@@ -116,16 +116,16 @@
                     srcset="img/blog-images/blog-image-2@2x.jpg 2x" width="380" height="380" alt="девушка с телефоном">
                 </picture>
               </a>
-              <h3 class="blog__subtitle">10 Things Nobody Told You About Banko</h3>
-              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              <h3 class="blog__subtitle" data-blog="2">10 Things Nobody Told You About Banko</h3>
+              <p class="blog__text" data-blog="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi
                 morbi.</p>
               <div class="blog__tags-wrapper">
-                <p class="blog__tag">Technology</p>
+                <p class="blog__tag technology">Technology</p>
               </div>
             </li>
-            <li class="blog__item">
-              <a class="blog__link" href="blog-single.html">
+            <li class="blog__item blog__item--show app product">
+              <a class="blog__link" data-blog="3" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="img/blog-images/blog-image-3.webp 1x, img/blog-images/blog-image-3@2x.webp 2x">
@@ -133,17 +133,17 @@
                     srcset="img/blog-images/blog-image-3@2x.jpg 2x" width="380" height="380" alt="кошелёк с деньгами">
                 </picture>
               </a>
-              <h3 class="blog__subtitle">How To Start Using Banko For Your Startup</h3>
-              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              <h3 class="blog__subtitle" data-blog="3">How To Start Using Banko For Your Startup</h3>
+              <p class="blog__text" data-blog="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi
                 morbi.</p>
               <div class="blog__tags-wrapper">
-                <p class="blog__tag">App</p>
-                <p class="blog__tag">Product</p>
+                <p class="blog__tag app">App</p>
+                <p class="blog__tag product">Product</p>
               </div>
             </li>
-            <li class="blog__item">
-              <a class="blog__link" href="blog-single.html">
+            <li class="blog__item blog__item--show product technology">
+              <a class="blog__link" data-blog="4" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="img/blog-images/blog-image-4.webp 1x, img/blog-images/blog-image-4@2x.webp 2x">
@@ -151,17 +151,17 @@
                     srcset="img/blog-images/blog-image-4@2x.jpg 2x" width="380" height="380" alt="человек в наушниках">
                 </picture>
               </a>
-              <h3 class="blog__subtitle">Why We Love Banko (And You Should, Too!)</h3>
-              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              <h3 class="blog__subtitle" data-blog="4">Why We Love Banko (And You Should, Too!)</h3>
+              <p class="blog__text" data-blog="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi
                 morbi.</p>
               <div class="blog__tags-wrapper">
-                <p class="blog__tag">Product</p>
-                <p class="blog__tag">Technology</p>
+                <p class="blog__tag product">Product</p>
+                <p class="blog__tag technology">Technology</p>
               </div>
             </li>
-            <li class="blog__item">
-              <a class="blog__link" href="blog-single.html">
+            <li class="blog__item blog__item--show app">
+              <a class="blog__link" data-blog="5" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="img/blog-images/blog-image-5.webp 1x, img/blog-images/blog-image-5@2x.webp 2x">
@@ -169,16 +169,16 @@
                     srcset="img/blog-images/blog-image-5@2x.jpg 2x" width="380" height="380" alt="монета биткоин">
                 </picture>
               </a>
-              <h3 class="blog__subtitle">5 Principles Of Crypto Investing</h3>
-              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              <h3 class="blog__subtitle" data-blog="5">5 Principles Of Crypto Investing</h3>
+              <p class="blog__text" data-blog="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi
                 morbi.</p>
               <div class="blog__tags-wrapper">
-                <p class="blog__tag">App</p>
+                <p class="blog__tag app">App</p>
               </div>
             </li>
-            <li class="blog__item">
-              <a class="blog__link" href="blog-single.html">
+            <li class="blog__item blog__item--show technology">
+              <a class="blog__link" data-blog="6" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="img/blog-images/blog-image-6.webp 1x, img/blog-images/blog-image-6@2x.webp 2x">
@@ -187,12 +187,12 @@
                     alt="изображение телефона и ноутбука">
                 </picture>
               </a>
-              <h3 class="blog__subtitle">7 Things About Banko Your Friends Want To Know</h3>
-              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              <h3 class="blog__subtitle" data-blog="6">7 Things About Banko Your Friends Want To Know</h3>
+              <p class="blog__text" data-blog="6">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi
                 morbi.</p>
               <div class="blog__tags-wrapper">
-                <p class="blog__tag">Technology</p>
+                <p class="blog__tag technology">Technology</p>
               </div>
             </li>
           </ul>
@@ -296,6 +296,62 @@
     </div>
   </footer>
 
+
+  <section class="modal">
+
+    <div class="single-post">
+      <button class="single-post__close-popup" type="button">
+        <img class="single-post__close-popup-img" src="img/icons/cross-icon.svg" alt="кнопка закрытия окна">
+      </button>
+      <div class="single-post__content"></div>
+
+      <div class="socials">
+        <div class="socials__wrapper">
+          <h2 class="socials__title title title--small">Share article</h2>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg class="socials__socials-logo" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use class="socials__socials-logo" href="img/sprite.svg#twitter-link">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg class="socials__socials-logo socials__socials-logo--facebook" width="20" height="20"
+                  aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#facebook-link">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg class="socials__socials-logo" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#linkedin-link">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg class="socials__socials-logo socials__socials-logo--instagram" width="20" height="20"
+                  aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#instagram-link">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/categories-filter.js"></script>
+  <script src="js/single-post.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,14 @@
 
 .blog__item {
   margin-bottom: 65px;
+
+  &--close {
+    display: none;
+  }
+
+  &--show {
+    display: block;
+  }
 }
 
 .blog__link {
@@ -50,11 +58,11 @@
 }
 
 .blog__tag {
-  @include font-setting(13px, 180%);
-
   margin: 0;
   margin-right: 8px;
   padding: 4px 10px;
-  background-color: $grey-light-color;
+  color: $base-black-opacity-50;
+  background-color: $turquoise-light-color;
   border-radius: 4px;
+  @include font-setting(13px, 180%);
 }

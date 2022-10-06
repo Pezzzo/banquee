@@ -28,7 +28,13 @@
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     text-shadow: $base-black-opacity-50 0 4px 3px;
+  }
+
+  &--active {
+    margin-bottom: 6px;
+    color: $turquoise-color;
+    pointer-events: none;
   }
 }
