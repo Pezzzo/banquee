@@ -6,6 +6,7 @@
 .accordion__question {
   position: relative;
   margin: 0;
+  padding-right: 40px;
   cursor: pointer;
 
   &::after {
@@ -15,31 +16,43 @@
     width: 14px;
     height: 14px;
     background: url("../img/icons/cross-icon.svg") 50% 50% no-repeat;
+    background-size: contain;
     transform: translateY(-50%);
+    transition: all 0.2s;
     content: "";
   }
 
   &--active {
     &::after {
-      top: 20%;
-      transform: rotate(45deg);
+      top: 17%;
+      width: 15px;
+      height: 15px;
+      background-size: contain;
+      transform: rotate(225deg);
+      transition: all 0.2s;
+      content: "";
     }
   }
 }
 
 .accordion__answer {
-  display: none;
-
-  &--active {
-    display: block;
-    color: $base-black-opacity-50;
-    @include font-setting(16px, 160%);
-    @include margin-y(16px, 0);
-  }
+  max-height: 0;
+  overflow: hidden;
+  color: $base-black-opacity-50;
+  transition: max-height 0.2s ease-out;
+  @include font-setting(16px, 160%);
 }
 
 .accordion__item {
-  min-height: 86px;
-  padding: 32px 0;
+  min-height: 50px;
+  padding: 32px 0 0;
   border-bottom: 1px solid $grey-color;
+
+  @media (max-width: $tablet) {
+    padding: 24px 20px 0;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    padding: 28px 0 0;
+  }
 }

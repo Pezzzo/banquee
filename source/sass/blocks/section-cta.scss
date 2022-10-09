@@ -1,5 +1,10 @@
 .section-cta {
+  padding: 0 40px;
   color: $base-white;
+
+  @media (max-width: $tablet) {
+    padding: 0 30px;
+  }
 }
 
 .section-cta__wrapper {
@@ -21,12 +26,31 @@
     "../img/cta-mobile-screen.webp",
     "../img/cta-mobile-screen@2x.webp"
   );
+
+  @media (max-width: $tablet) {
+    padding-bottom: 340px;
+    background-position: 50% 100%;
+    background-size: 240px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    background-position: 94% 100%;
+    background-size: 280px;
+  }
 }
 
 .section-cta__content-wrapper {
   max-width: 524px;
   margin-left: 76px;
   padding-top: 96px;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-small) {
+    margin-left: 0;
+  }
 }
 
 .section-cta__title {
@@ -36,6 +60,16 @@
 .section-cta__text {
   @include margin-y(0, 32px);
   @include font-setting(18px, 180%);
+
+  max-width: 360px;
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    font-size: 16px;
+  }
 }
 
 .section-cta__list {
@@ -44,6 +78,10 @@
   gap: 16px 64px;
   padding-left: 42px;
   @include margin-y(0, 48px);
+
+  @media (max-width: $desktop-small) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .section-cta__item {
@@ -67,6 +105,13 @@
 
 .section-cta__link {
   margin-right: 18px;
+}
+
+.section-cta__links-wrapper {
+  @media (max-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .section-cta__link-img {

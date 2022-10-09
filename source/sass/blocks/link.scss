@@ -2,6 +2,10 @@
   position: relative;
   color: $turquoise-color;
 
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
+
   &--arrow {
     &::after {
       position: absolute;
@@ -13,14 +17,31 @@
       background-size: cover;
       transition: all 0.1s ease-in-out;
       content: "";
+
+      @media (max-width: $tablet) {
+        width: 12px;
+        height: 10px;
+      }
+      @media (min-width: $tablet) and (max-width: $desktop-medium) {
+        width: 14px;
+        height: 12px;
+      }
     }
 
     &:hover {
       &::after {
-        top: 2px;
-        right: -30px;
-        width: 18px;
-        height: 16px;
+        @media (min-width: $tablet) {
+          top: 2px;
+          right: -32px;
+          width: 16px;
+          height: 14px;
+        }
+        @media (min-width: $desktop-medium) {
+          top: 2px;
+          right: -31px;
+          width: 18px;
+          height: 16px;
+        }
       }
     }
   }

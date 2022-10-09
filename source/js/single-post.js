@@ -7,7 +7,7 @@ const postList = document.querySelector('.blog__list');
 const post = document.querySelector('.single-post__content');
 const titles = document.querySelectorAll('.blog__subtitle');
 const descriptions = document.querySelectorAll('.blog__text');
-const closeModalButton = document.querySelector('.single-post__close-popup');
+const closeModalButton = document.querySelector('.modal-button');
 
 // отключение скролла
 const disableScrolling = () => {
@@ -25,6 +25,7 @@ const enableScrolling = () => {
 
 // закрытие модального окна
 const closeModalMouseHandler = () => {
+  closeModalButton.classList.add('modal-button--closed');
   modal.classList.remove('modal--show-modal');
   page.classList.remove('page--modal-open');
   enableScrolling();
@@ -33,6 +34,7 @@ const closeModalMouseHandler = () => {
 const closeModalKeyHandler = (evt) => {
   if (evt.key === 'Esc' || evt.key === 'Escape') {
     evt.preventDefault();
+    closeModalButton.classList.add('modal-button--closed');
     modal.classList.remove('modal--show-modal');
     page.classList.remove('page--modal-open');
     enableScrolling();
@@ -61,7 +63,7 @@ const createPost = (data, title, description, dataset) => {
     <p class="single-post__description">${description}</p>
       <source type="image/webp"
         srcset="img/blog-images/blog-image-${dataset}.webp 1x, img/blog-images/blog-image-${dataset}@2x.webp 2x">
-        <img class="single-post__img" src="img/blog-images/blog-image-${dataset}.jpg" loading="lazy"
+        <img class="single-post__img" src="img/blog-images/blog-image-${dataset}.jpg"
         srcset="img/blog-images/blog-image-${dataset}@2x.jpg 2x" width="600" height="600" alt="изображение поста">
       </picture>
       <h3 class="single-post__subtitle title">${data[dataset].title}</h3>
@@ -92,6 +94,7 @@ const postListHandler = (evt) => {
     disableScrolling();
     page.classList.add('page--modal-open');
     modal.classList.add('modal--show-modal');
+    closeModalButton.classList.remove('modal-button--closed');
     post.innerHTML = '';
 
     titles.forEach((el) => {

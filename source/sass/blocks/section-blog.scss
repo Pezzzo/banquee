@@ -6,6 +6,14 @@
 
 .section-blog__wrapper {
   @include padding-y(160px, 96px);
+
+  @media (max-width: $tablet) {
+    @include padding-y(80px, 40px);
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    @include padding-y(120px, 60px);
+  }
 }
 
 .section-blog__text {

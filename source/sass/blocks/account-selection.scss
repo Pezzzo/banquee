@@ -1,23 +1,25 @@
 .account-selection {
   grid-column: 1/-1;
+
+  @media (min-width: $desktop-medium) {
+    display: none;
+  }
 }
 
 .account-selection__list {
   display: flex;
   justify-content: center;
+  margin: 0;
   margin-bottom: 40px;
+  padding: 0;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
-.section-compare__button {
-  min-width: 200px;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding: 10px 20px;
-  background-color: $turquoise-light-color;
-  border-radius: 5px;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    background-color: $turquoise-color;
+.account-selection__item {
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
   }
 }

@@ -3,6 +3,10 @@
   max-width: 1280px;
   margin: 0 auto;
   @include padding-x(40px, 40px);
+
+  @media (max-width: $tablet) {
+    @include padding-x(30px, 30px);
+  }
 }
 
 .wide-wrapper {
@@ -10,6 +14,10 @@
   max-width: 1480px;
   margin: 0 auto;
   @include padding-x(40px, 40px);
+
+  @media (max-width: $tablet) {
+    @include padding-x(30px, 30px);
+  }
 }
 
 img {

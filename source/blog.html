@@ -32,7 +32,7 @@
     <div class="page-header__wrapper wide-wrapper">
       <a class="page-header__logo company-logo" href="index.html">banquee.</a>
       <nav class="page-nav">
-        <ul class="page-nav__list">
+        <ul class="page-nav__list page-nav__list--closed page-nav__list--nojs">
           <li class="page-nav__item">
             <a class="page-nav__link" href="index.html">Home</a>
           </li>
@@ -55,6 +55,9 @@
         <button class="page-header__sign-in" type="button">Login</button>
         <a class="page-header__open-account button button--mod" href="#">Open Account</a>
       </div>
+      <button class="page-header__burger page-header__burger--closed page-header__burger--nojs" type="button">
+        <span class="visually-hidden">меню</span>
+      </button>
     </div>
   </header>
 
@@ -209,7 +212,7 @@
 
         <h2 class="visually-hidden">навигация</h2>
 
-        <a class="section-nav__logo company-logo" href="index.html">banquee.</a>
+        <a class="section-nav__logo company-logo company-logo--footer" href="index.html">banquee.</a>
         <div class="section-nav__nav-wrapper">
           <ul class="section-nav__list">
             <li class="section-nav__item">
@@ -296,13 +299,13 @@
     </div>
   </footer>
 
+  <button class="modal-button modal-button--closed" type="button">
+    <img class="modal-button__img" src="img/icons/cross-icon.svg" alt="кнопка закрытия окна">
+  </button>
 
   <section class="modal">
 
     <div class="single-post">
-      <button class="single-post__close-popup" type="button">
-        <img class="single-post__close-popup-img" src="img/icons/cross-icon.svg" alt="кнопка закрытия окна">
-      </button>
       <div class="single-post__content"></div>
 
       <div class="socials">
@@ -350,8 +353,9 @@
     </div>
   </section>
 
-  <script src="js/categories-filter.js"></script>
+  <script src="js/posts-filter.js"></script>
   <script src="js/single-post.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

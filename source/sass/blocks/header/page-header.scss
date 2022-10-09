@@ -3,24 +3,106 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 100;
+  z-index: 200;
   padding: 24px 40px;
   background-color: $base-white;
+
+  @media (max-width: $tablet) {
+    padding: 24px 0 0;
+  }
 }
 
 .page-header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $desktop-small) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
 }
 
 .page-header__capabilities {
+  display: flex;
+  align-items: center;
   font-family: $DMSans;
   line-height: 100%;
+  white-space: nowrap;
+
+  @media (max-width: $tablet) {
+    grid-row: 1/2;
+    grid-column: 2/-1;
+    justify-self: end;
+    font-size: 24px;
+  }
+}
+
+.page-header__open-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+
+  @media (max-width: $tablet) {
+    min-height: 30px;
+  }
 }
 
 .page-header__sign-in {
   padding-right: 32px;
   color: $turquoise-color;
   font-size: 18px;
+
+  @media (max-width: $tablet) {
+    padding-right: 16px;
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    font-size: 16px;
+  }
+}
+
+.page-header__burger {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: $base-white;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+
+  &--opened {
+    background: url("../img/burger-open.svg") 50% 50% no-repeat;
+    background-size: 16px 16px;
+
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &--closed {
+    background: url("../img/burger-closed.svg") 50% 50% no-repeat;
+    background-size: 20px 16px;
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &--nojs {
+    display: none;
+  }
 }

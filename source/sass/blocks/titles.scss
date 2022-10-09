@@ -3,17 +3,69 @@
 
   &--small {
     @include font-setting(20px, 120%);
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
   }
 
   &--small-medium {
     @include font-setting(40px, 120%);
+
+    @media (max-width: $tablet) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-small) {
+      font-size: 26px;
+    }
+
+    @media (min-width: $desktop-small) and (max-width: $desktop-medium) {
+      font-size: 32px;
+    }
+
+    @media (min-width: $desktop-medium) and (max-width: $desktop-large) {
+      font-size: 36px;
+    }
   }
 
   &--medium {
     @include font-setting(60px, 110%);
+
+    @media (max-width: $tablet) {
+      font-size: 26px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-small) {
+      font-size: 38px;
+    }
+
+    @media (min-width: $desktop-small) and (max-width: $desktop-medium) {
+      font-size: 44px;
+    }
+
+    @media (min-width: $desktop-medium) and (max-width: $desktop-large) {
+      font-size: 52px;
+    }
   }
 
   &--big {
     @include font-setting(80px, 110%);
+
+    @media (max-width: $tablet) {
+      font-size: 36px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-small) {
+      font-size: 50px;
+    }
+
+    @media (min-width: $desktop-small) and (max-width: $desktop-medium) {
+      font-size: 60px;
+    }
+
+    @media (min-width: $desktop-medium) and (max-width: $desktop-large) {
+      font-size: 70px;
+    }
   }
 }

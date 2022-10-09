@@ -33,5 +33,4 @@ buttonsList.addEventListener('click', (evt) => {
       el.classList.remove('blog__item--close');
     }
   });
-
 });

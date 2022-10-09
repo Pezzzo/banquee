@@ -3,6 +3,15 @@
   grid-template-columns: 1fr 1fr;
   min-height: 612px;
   @include padding-y(160px, 80px);
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+    @include padding-y(40px, 0);
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    @include padding-y(80px, 60px);
+  }
 }
 
 .section-savings__text-wrapper {
@@ -14,6 +23,14 @@
   align-items: end;
   justify-content: end;
   padding-bottom: 64px;
+
+  @media (max-width: $tablet) {
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    padding-bottom: 48px;
+  }
 }
 
 .section-savings__link {
@@ -32,8 +49,17 @@
 
 .section-savings__text {
   @include font-setting(20px, 180%);
-
   @include margin-y(0, 64px);
+
+  @media (max-width: $tablet) {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    margin-bottom: 48px;
+    font-size: 18px;
+  }
 }
 
 .section-savings__cost {
@@ -42,11 +68,14 @@
 }
 
 .section-savings__list {
-  @include zero-indents;
-
   display: flex;
   flex-wrap: wrap;
   grid-column: 1/-1;
+  @include zero-indents;
+
+  @media (max-width: $desktop-medium) {
+    justify-content: center;
+  }
 }
 
 .section-savings__item {
@@ -56,6 +85,13 @@
   justify-content: end;
   width: 214px;
   min-height: 280px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  @media (max-width: $desktop-medium) {
+    min-height: 270px;
+    margin-bottom: 20px;
+  }
 
   &:not(:last-child)::before {
     position: absolute;
@@ -119,10 +155,6 @@
   &:last-child {
     justify-content: start;
   }
-}
-
-.section-savings__item:not(:last-child) {
-  margin-right: 32px;
 }
 
 .section-savings__add-button {

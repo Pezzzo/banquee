@@ -3,15 +3,26 @@
   flex-direction: column;
   min-height: 452px;
   @include padding-y(80px, 160px);
+
+  @media (max-width: $tablet) {
+    @include padding-y(40px, 40px);
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    @include padding-y(80px, 80px);
+  }
 }
 
 .section-tools__list {
-  @include zero-indents;
-
   display: flex;
   flex-wrap: wrap;
   max-width: 780px;
   margin-bottom: 48px;
+  @include zero-indents;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .section-tools__item {
@@ -25,18 +36,27 @@
 }
 
 .section-tools__text-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $desktop-small) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .section-tools__text {
   max-width: 540px;
-  margin-right: 220px;
+  @media (max-width: $desktop-small) {
+    justify-self: center;
+    margin-bottom: 20px;
+  }
 }
 
 .section-tools__advantage {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  justify-self: center;
 }
 
 .section-tools__advantage-list {
@@ -60,6 +80,13 @@
     background-size: contain;
     transform: translateY(-50%);
     content: "";
+
+    @media (max-width: $desktop-small) {
+      left: -40px;
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+    }
   }
 
   &:not(:last-child) {
@@ -82,6 +109,14 @@
 .section-tools__advantage-text,
 .section-tools__description {
   @include font-setting(18px, 180%);
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    font-size: 16px;
+  }
 }
 
 .section-tools__advantage-text {

@@ -4,4 +4,29 @@
   font-size: 32px;
   font-family: $DMSans;
   line-height: 100%;
+
+  @media (max-width: $tablet) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: start;
+    margin-right: 30px;
+    font-size: 24px;
+  }
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    font-size: 28px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-small) {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  &--footer {
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+    }
+    @media (min-width: $tablet) and (max-width: $desktop-medium) {
+      margin-bottom: 60px;
+    }
+  }
 }

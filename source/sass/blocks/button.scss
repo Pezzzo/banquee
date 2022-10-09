@@ -7,9 +7,26 @@
   transition: all 0.1s ease-in-out;
   @include font-setting(18px, 100%);
 
+  @media (max-width: $tablet) {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    padding: 14px 18px;
+    font-size: 16px;
+  }
+
   &--mod {
     padding: 10px 16px;
     @include font-setting(15px, 100%);
+
+    @media (max-width: $tablet) {
+      padding: 4px 8px;
+      font-size: 11px;
+    }
+    @media (min-width: $tablet) and (max-width: $desktop-medium) {
+      font-size: 13px;
+    }
   }
 
   &:hover {

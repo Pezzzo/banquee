@@ -17,6 +17,21 @@
       "../img/cards/features-cards.webp",
       "../img/cards/features-cards@2x.webp"
     );
+
+    @media (max-width: $tablet) {
+      background-position: 50% 160%;
+      background-size: 700px 275px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-small) {
+      background-position: 50% 172%;
+      background-size: 1200px 471px;
+    }
+
+    @media (min-width: $desktop-small) and (max-width: $desktop-medium) {
+      background-position: 50% 164%;
+      background-size: 1200px 471px;
+    }
   }
 }
 
@@ -37,12 +52,41 @@
       "../img/cards/front-cards.webp",
       "../img/cards/front-cards@2x.webp"
     );
+
+    @media (max-width: $tablet) {
+      background-position: 50% 0;
+      background-size: 200px;
+      @include margin-y(50px, 50px);
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-small) {
+      margin-bottom: 80px;
+      background-position: 70% 0;
+      background-size: 300px;
+    }
+
+    @media (min-width: $desktop-small) and (max-width: $desktop-medium) {
+      background-position: 85% 0;
+      background-size: 350px;
+    }
   }
 
   &--features-page {
     min-height: 290px;
     text-align: center;
     @include padding-y(128px, 450px);
+
+    @media (max-width: $tablet) {
+      @include padding-y(64px, 200px);
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-small) {
+      @include padding-y(200px, 350px);
+    }
+
+    @media (min-width: $desktop-small) and (max-width: $desktop-medium) {
+      @include padding-y(100px, 400px);
+    }
   }
 
   &--support-page,
@@ -66,6 +110,18 @@
       "../img/cards/compare-cards.webp",
       "../img/cards/compare-cards@2x.webp"
     );
+
+    @media (max-width: $tablet) {
+      padding-top: 0;
+      padding-bottom: 300px;
+      background-position: 50% 100%;
+      background-size: 300px 215px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-small) {
+      background-position: 90% 100%;
+      background-size: 400px 286px;
+    }
   }
 
   &--support-page {
@@ -82,11 +138,27 @@
       "../img/support-app.webp",
       "../img/support-app@2x.webp"
     );
+
+    @media (max-width: $tablet) {
+      padding-top: 0;
+      padding-bottom: 240px;
+      background-position: 50% 100%;
+      background-size: 200px 204px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-small) {
+      background-position: 90% 100%;
+      background-size: 300px 306px;
+    }
   }
 
   &--blog-page {
     text-align: center;
     @include padding-y(96px, 96px);
+
+    @media (max-width: $tablet) {
+      @include padding-y(40px, 40px);
+    }
   }
 }
 
@@ -95,11 +167,31 @@
   flex-direction: column;
   max-width: 600px;
 
+  @media (max-width: $tablet) {
+    padding-top: 300px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-small) {
+    padding-top: 420px;
+  }
+
   &--features-page {
     align-items: center;
     justify-content: center;
     max-width: 800px;
     margin: 0 auto;
+    padding-top: 0;
+  }
+
+  &--compare-page,
+  &--support-page {
+    @media (max-width: $tablet) {
+      padding-top: 30px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-medium) {
+      padding-top: 60px;
+    }
   }
 }
 
@@ -115,8 +207,26 @@
   @include margin-y(0, 32px);
   @include font-setting(24px, 180%);
 
+  @media (max-width: $tablet) {
+    max-width: 400px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    max-width: 500px;
+    font-size: 20px;
+  }
+
   &--features-page {
     @include font-setting(20px, 180%);
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-medium) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -125,6 +235,16 @@
   flex-wrap: wrap;
   @include margin-y(0, 64px);
   @include font-setting(18px, 180%);
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
 }
 
 .section-hero__item {
@@ -152,6 +272,11 @@
   display: flex;
   align-items: center;
   margin-top: 20px;
+  white-space: nowrap;
+
+  @media (max-width: $tablet) {
+    justify-content: space-between;
+  }
 
   &--features-page {
     margin-top: 0;

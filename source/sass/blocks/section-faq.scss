@@ -8,8 +8,34 @@
   grid-template-columns: 1fr 1fr;
   @include padding-y(160px, 160px);
 
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+    @include padding-y(100px, 100px);
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    font-size: 16px;
+    @include padding-y(130px, 130px);
+  }
+
   &--support-page {
-    @include padding-y(0, 160px);
+    @include padding-y(0, 32px);
+  }
+}
+
+.section-faq__category {
+  margin-bottom: 128px;
+
+  &--close {
+    display: none;
+  }
+
+  &--show {
+    display: block;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 96px;
   }
 }
 
@@ -35,12 +61,26 @@
 
     &::before {
       background: url("../img/icons/phone-icon.svg") 50% 50% no-repeat;
+
+      @media (max-width: $tablet) {
+        left: -54px;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+      }
     }
   }
 
   &:nth-child(2) {
     &::before {
       background: url("../img/icons/mail-icon.svg") 50% 50% no-repeat;
+
+      @media (max-width: $tablet) {
+        left: -54px;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+      }
     }
   }
 }
@@ -61,7 +101,18 @@
       background: url("../img/icons/faq-icon.svg") 50% 50% no-repeat;
       transform: translateY(-50%);
       content: "";
+
+      @media (max-width: $tablet) {
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+      }
     }
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
   }
 }
 
@@ -70,10 +121,18 @@
   color: $base-black;
   @include margin-y(0, 4px);
   @include font-setting(18px, 140%);
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
 }
 
 .section-faq__description {
   margin: 0;
   color: $base-black-opacity-50;
   @include font-setting(14px, 160%);
+
+  @media (max-width: $tablet) {
+    font-size: 12px;
+  }
 }

@@ -9,12 +9,16 @@
   <link rel="preload" href="fonts/DMSans-Bold.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="fonts/DMSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
+  <link rel="preload" href="img/cards/front-cards.webp" as="image">
+  <link rel="preload" href="img/cards/front-cards@2x.webp" as="image">
+
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" as="style">
   <link rel="preload" href="css/style.min.css" as="style">
 
   <meta charset="UTF-8">
   <meta name="Description" content="Банк">
   <meta name="Keywords" content="банк, финансы">
-  <meta name="Copyright" content="Pawel Gola">
+  <meta name="Copyright" content="Pawel Gola, Pezzzo">
   <meta name="Robots" content="All">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -23,6 +27,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icons/app-icon.svg" type="image/svg+xml">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -32,7 +37,7 @@
     <div class="page-header__wrapper wide-wrapper">
       <a class="page-header__logo company-logo" href="index.html">banquee.</a>
       <nav class="page-nav">
-        <ul class="page-nav__list">
+        <ul class="page-nav__list page-nav__list--closed page-nav__list--nojs">
           <li class="page-nav__item">
             <a class="page-nav__link page-nav__link--active" href="index.html">Home</a>
           </li>
@@ -53,64 +58,56 @@
                   <h3 class="blog-preview__title">Latest Articles</h3>
                   <ul class="blog-preview__list">
                     <li class="blog-preview__item">
-                      <a class="blog-preview__link" href="blog-single.html">
-                        <picture>
-                          <source type="image/webp"
-                            srcset="img/blog-images/blog-image-1.webp 1x, img/blog-images/blog-image-1@2x.webp 2x">
-                          <img class="blog-preview__img" src="img/blog-images/blog-image-1.jpg" loading="lazy"
-                            srcset="img/blog-images/blog-image-1@2x.jpg 2x" width="100" height="100"
-                            alt="бесконтактная оплата">
-                        </picture>
-                        <div class="blog-preview__text-wrapper">
-                          <h4 class="blog-preview__subtitle">How To Start Using Banko For Your Startup</h4>
-                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
-                        </div>
-                      </a>
+                      <picture>
+                        <source type="image/webp"
+                          srcset="img/blog-images/blog-image-1.webp 1x, img/blog-images/blog-image-1@2x.webp 2x">
+                        <img class="blog-preview__img" src="img/blog-images/blog-image-1.jpg" loading="lazy"
+                          srcset="img/blog-images/blog-image-1@2x.jpg 2x" width="100" height="100"
+                          alt="мини-фото поста">
+                      </picture>
+                      <div class="blog-preview__text-wrapper">
+                        <h4 class="blog-preview__subtitle">How To Start Using Banko For Your Startup</h4>
+                        <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                      </div>
                     </li>
                     <li class="blog-preview__item">
-                      <a class="blog-preview__link" href="blog-single.html">
-                        <picture>
-                          <source type="image/webp"
-                            srcset="img/blog-images/blog-image-2.webp 1x, img/blog-images/blog-image-2@2x.webp 2x">
-                          <img class="blog-preview__img" src="img/blog-images/blog-image-2.jpg" loading="lazy"
-                            srcset="img/blog-images/blog-image-2@2x.jpg 2x" width="100" height="100"
-                            alt="бесконтактная оплата">
-                        </picture>
-                        <div class="blog-preview__text-wrapper">
-                          <h4 class="blog-preview__subtitle">10 Things Nobody Told You About Banko</h4>
-                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
-                        </div>
-                      </a>
+                      <picture>
+                        <source type="image/webp"
+                          srcset="img/blog-images/blog-image-2.webp 1x, img/blog-images/blog-image-2@2x.webp 2x">
+                        <img class="blog-preview__img" src="img/blog-images/blog-image-2.jpg" loading="lazy"
+                          srcset="img/blog-images/blog-image-2@2x.jpg 2x" width="100" height="100"
+                          alt="мини-фото поста">
+                      </picture>
+                      <div class="blog-preview__text-wrapper">
+                        <h4 class="blog-preview__subtitle">10 Things Nobody Told You About Banko</h4>
+                        <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                      </div>
                     </li>
                     <li class="blog-preview__item">
-                      <a class="blog-preview__link" href="blog-single.html">
-                        <picture>
-                          <source type="image/webp"
-                            srcset="img/blog-images/blog-image-3.webp 1x, img/blog-images/blog-image-3@2x.webp 2x">
-                          <img class="blog-preview__img" src="img/blog-images/blog-image-3.jpg" loading="lazy"
-                            srcset="img/blog-images/blog-image-3@2x.jpg 2x" width="100" height="100"
-                            alt="бесконтактная оплата">
-                        </picture>
-                        <div class="blog-preview__text-wrapper">
-                          <h4 class="blog-preview__subtitle">How To Start Using Banko For Your Startup</h4>
-                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
-                        </div>
-                      </a>
+                      <picture>
+                        <source type="image/webp"
+                          srcset="img/blog-images/blog-image-3.webp 1x, img/blog-images/blog-image-3@2x.webp 2x">
+                        <img class="blog-preview__img" src="img/blog-images/blog-image-3.jpg" loading="lazy"
+                          srcset="img/blog-images/blog-image-3@2x.jpg 2x" width="100" height="100"
+                          alt="мини-фото поста">
+                      </picture>
+                      <div class="blog-preview__text-wrapper">
+                        <h4 class="blog-preview__subtitle">How To Start Using Banko For Your Startup</h4>
+                        <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                      </div>
                     </li>
                     <li class="blog-preview__item">
-                      <a class="blog-preview__link" href="blog-single.html">
-                        <picture>
-                          <source type="image/webp"
-                            srcset="img/blog-images/blog-image-4.webp 1x, img/blog-images/blog-image-4@2x.webp 2x">
-                          <img class="blog-preview__img" src="img/blog-images/blog-image-4.jpg" loading="lazy"
-                            srcset="img/blog-images/blog-image-4@2x.jpg 2x" width="100" height="100"
-                            alt="бесконтактная оплата">
-                        </picture>
-                        <div class="blog-preview__text-wrapper">
-                          <h4 class="blog-preview__subtitle">Why We Love Banko (And You Should, Too!)</h4>
-                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
-                        </div>
-                      </a>
+                      <picture>
+                        <source type="image/webp"
+                          srcset="img/blog-images/blog-image-4.webp 1x, img/blog-images/blog-image-4@2x.webp 2x">
+                        <img class="blog-preview__img" src="img/blog-images/blog-image-4.jpg" loading="lazy"
+                          srcset="img/blog-images/blog-image-4@2x.jpg 2x" width="100" height="100"
+                          alt="мини-фото поста">
+                      </picture>
+                      <div class="blog-preview__text-wrapper">
+                        <h4 class="blog-preview__subtitle">Why We Love Banko (And You Should, Too!)</h4>
+                        <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                      </div>
                     </li>
                   </ul>
                   <a class="blog-preview__blog-link link link--arrow" href="blog.html">All Articles</a>
@@ -124,6 +121,9 @@
         <button class="page-header__sign-in" type="button">Login</button>
         <a class="page-header__open-account button button--mod" href="#">Open Account</a>
       </div>
+      <button class="page-header__burger page-header__burger--closed page-header__burger--nojs" type="button">
+        <span class="visually-hidden">меню</span>
+      </button>
     </div>
   </header>
 
@@ -161,49 +161,40 @@
 
     <section class="section-features">
       <div class="section-features__wrapper section-features__wrapper--home-page narrow-wrapper">
-        <div class="section-features__text-wrapper">
-          <h2 class="section-features__title title title--medium">One app. <br> One banking.</h2>
-          <ul class="section-features__list section-features__list--home-page">
-            <li class="section-features__item section-features__item--home-page">
-              <h3 class="section-features__subtitle title title--small">Instant <br>transactions</h3>
-              <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
-              </p>
-            </li>
-            <li class="section-features__item section-features__item--home-page">
-              <h3 class="section-features__subtitle title title--small">Saving <br>accounts</h3>
-              <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
-              </p>
-            </li>
-            <li class="section-features__item section-features__item--home-page">
-              <h3 class="section-features__subtitle title title--small">Mobile <br>banking</h3>
-              <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
-              </p>
-            </li>
-            <li class="section-features__item section-features__item--home-page">
-              <h3 class="section-features__subtitle title title--small">Advanced <br>statistics</h3>
-              <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
-              </p>
-            </li>
-            <li class="section-features__item section-features__item--home-page">
-              <h3 class="section-features__subtitle title title--small">Virtual <br>cards</h3>
-              <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
-              </p>
-            </li>
-            <li class="section-features__item section-features__item--home-page">
-              <h3 class="section-features__subtitle title title--small">Contactless <br>payments</h3>
-              <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
-              </p>
-            </li>
-          </ul>
-        </div>
 
-        <div class="section-features__img-wrapper">
-          <picture>
-            <source type="image/webp" srcset="img/mobile-screen-1.webp 1x, img/mobile-screen-1@2x.webp 2x">
-            <img class="section-features__img" src="img/mobile-screen-1.png" loading="lazy"
-              srcset="img/mobile-screen-1@2x.png 2x" width="380" height="800" alt="изображение банковских карт">
-          </picture>
-        </div>
+        <h2 class="section-features__title title title--medium">One app. <br> One banking.</h2>
+        <ul class="section-features__list section-features__list--home-page">
+          <li class="section-features__item section-features__item--home-page">
+            <h3 class="section-features__subtitle title title--small">Instant <br>transactions</h3>
+            <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
+            </p>
+          </li>
+          <li class="section-features__item section-features__item--home-page">
+            <h3 class="section-features__subtitle title title--small">Saving <br>accounts</h3>
+            <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
+            </p>
+          </li>
+          <li class="section-features__item section-features__item--home-page">
+            <h3 class="section-features__subtitle title title--small">Mobile <br>banking</h3>
+            <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
+            </p>
+          </li>
+          <li class="section-features__item section-features__item--home-page">
+            <h3 class="section-features__subtitle title title--small">Advanced <br>statistics</h3>
+            <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
+            </p>
+          </li>
+          <li class="section-features__item section-features__item--home-page">
+            <h3 class="section-features__subtitle title title--small">Virtual <br>cards</h3>
+            <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
+            </p>
+          </li>
+          <li class="section-features__item section-features__item--home-page">
+            <h3 class="section-features__subtitle title title--small">Contactless <br>payments</h3>
+            <p class="section-features__text">Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.
+            </p>
+          </li>
+        </ul>
 
       </div>
     </section>
@@ -402,73 +393,92 @@
           </p>
         </div>
 
-        <div class="section-testimonials__lists-wrapper">
 
-          <ul class="section-testimonials__list section-testimonials__list--col1">
-            <li class="section-testimonials__item">
-              <h3 class="section-testimonials__subtitle title">Sunt qui esse pariatur duis deserunt mollit </h3>
-              <p class="section-testimonials__comment">Nulla Lorem mollit cupidatat irure.
-                Laborum magna nulla duis ullamco cillum dolor.
-                Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. </p>
-              <p class="section-testimonials__author title">Cody Fisher</p>
-              <p class="section-testimonials__profession">Medical Assistant</p>
-            </li>
-            <li class="section-testimonials__item">
-              <h3 class="section-testimonials__subtitle  title">Sunt qui esse pariatur duis deserunt mollit </h3>
-              <p class="section-testimonials__comment">Nulla Lorem mollit cupidatat irure.
-                Laborum magna nulla duis ullamco cillum dolor.
-                Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. </p>
-              <p class="section-testimonials__author title">Cody Fisher</p>
-              <p class="section-testimonials__profession">Medical Assistant</p>
-            </li>
-          </ul>
+        <div class="swiper swiper--home-page">
+          <div class="swiper-wrapper swiper-wrapper--home-page">
 
-          <ul class="section-testimonials__list section-testimonials__list--col2">
-            <li class="section-testimonials__item">
-              <h3 class="section-testimonials__subtitle  title">At lectus urna duis convallis tellus</h3>
-              <p class="section-testimonials__comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Dui accumsan sit amet nulla facilisi morbi.
-                <br>
-                <br>
-                In nibh mauris cursus mattis. At lectus urna duis convallis convallis tellus.
-                Enim blandit volutpat maecenas volutpat.
-              </p>
-              <p class="section-testimonials__author title">Jenny Wilson</p>
-              <p class="section-testimonials__profession">Nursing Assistant</p>
-            </li>
-            <li class="section-testimonials__item">
-              <h3 class="section-testimonials__subtitle  title">Donec et fringilla neque</h3>
-              <p class="section-testimonials__comment">Etiam accumsan porta neque in viverra.
-                Proin eleifend, eros in tristique hendrerit, nisi purus cursus sapien, id ultrices nunc tellus a ipsum.
-                Donec et fringilla neque. Aenean consequat purus quis lectus maximus fermentum.</p>
-              <p class="section-testimonials__author title">Darlene Robertson</p>
-              <p class="section-testimonials__profession">Dog Trainer</p>
-            </li>
-          </ul>
+            <div class="swiper-slide swiper-slide--home-page">
+              <div class="testimonials">
+                <h3 class="testimonials__subtitle title">Sunt qui esse pariatur duis deserunt mollit </h3>
+                <p class="testimonials__comment">Nulla Lorem mollit cupidatat irure.
+                  Laborum magna nulla duis ullamco cillum dolor.
+                  Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. </p>
+                <p class="testimonials__author title">Cody Fisher</p>
+                <p class="testimonials__profession">Medical Assistant</p>
+              </div>
+            </div>
 
-          <ul class="section-testimonials__list section-testimonials__list--col3">
-            <li class="section-testimonials__item">
-              <h3 class="section-testimonials__subtitle  title">Elit aute irure tempor cupidatat incididunt</h3>
-              <p class="section-testimonials__comment">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
-              <p class="section-testimonials__author title">Guy Hawkins</p>
-              <p class="section-testimonials__profession">President of Sales</p>
-            </li>
-            <li class="section-testimonials__item">
-              <h3 class="section-testimonials__subtitle  title">Etiam accumsan porta neque eros</h3>
-              <p class="section-testimonials__comment">Nulla Lorem mollit cupidatat irure.
-                Laborum magna nulla duis ullamco cillum dolor.
-                Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. </p>
-              <p class="section-testimonials__author title">Dianne Russell</p>
-              <p class="section-testimonials__profession">Medical Assistant</p>
-            </li>
-          </ul>
+            <div class="swiper-slide swiper-slide--home-page">
+              <div class="testimonials">
+                <h3 class="testimonials__subtitle title">Sunt qui esse pariatur duis deserunt mollit </h3>
+                <p class="testimonials__comment">Nulla Lorem mollit cupidatat irure.
+                  Laborum magna nulla duis ullamco cillum dolor.
+                  Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. </p>
+                <p class="testimonials__author title">Cody Fisher</p>
+                <p class="testimonials__profession">Medical Assistant</p>
+              </div>
+            </div>
 
+            <div class="swiper-slide swiper-slide--home-page">
+              <div class="testimonials">
+                <h3 class="testimonials__subtitle title">At lectus urna duis convallis tellus</h3>
+                <p class="testimonials__comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Dui accumsan sit amet nulla facilisi morbi.
+                  <br>
+                  <br>
+                  In nibh mauris cursus mattis. At lectus urna duis convallis convallis tellus.
+                  Enim blandit volutpat maecenas volutpat.
+                </p>
+                <p class="testimonials__author title">Jenny Wilson</p>
+                <p class="testimonials__profession">Nursing Assistant</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide--home-page">
+              <div class="testimonials">
+                <h3 class="testimonials__subtitle title">Donec et fringilla neque</h3>
+                <p class="testimonials__comment">Etiam accumsan porta neque in viverra.
+                  Proin eleifend, eros in tristique hendrerit, nisi purus cursus sapien, id ultrices nunc tellus a
+                  ipsum.
+                  Donec et fringilla neque. Aenean consequat purus quis lectus maximus fermentum.</p>
+                <p class="testimonials__author title">Darlene Robertson</p>
+                <p class="testimonials__profession">Dog Trainer</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide--home-page">
+              <div class="testimonials">
+                <h3 class="testimonials__subtitle title">Elit aute irure tempor cupidatat incididunt</h3>
+                <p class="testimonials__comment">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                  Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+                  Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+                <p class="testimonials__author title">Guy Hawkins</p>
+                <p class="testimonials__profession">President of Sales</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide--home-page">
+              <div class="testimonials">
+                <h3 class="testimonials__subtitle title">Etiam accumsan porta neque eros</h3>
+                <p class="testimonials__comment">Nulla Lorem mollit cupidatat irure.
+                  Laborum magna nulla duis ullamco cillum dolor.
+                  Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. </p>
+                <p class="testimonials__author title">Dianne Russell</p>
+                <p class="testimonials__profession">Medical Assistant</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination swiper-pagination--home-page"></div>
+          <button class="swiper-button swiper-button-prev swiper-button--nojs swiper-button--home-page"
+            type="button"></button>
+          <button class="swiper-button swiper-button-next swiper-button--nojs swiper-button--home-page"
+            type="button"></button>
         </div>
 
       </div>
+
     </section>
 
     <section class="section-cta">
@@ -531,7 +541,7 @@
                 Eget gravida cum sociis natoque penatibus et magnis dis parturient.</p>
             </li>
             <li class="accordion__item">
-              <h3 class="accordion__question title title--small accordion__question--active">How do I order a new card?
+              <h3 class="accordion__question title title--small">How do I order a new card?
               </h3>
               <p class="accordion__answer accordion__answer--active">Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit, sed do eiusmod
@@ -540,7 +550,7 @@
                 Eget gravida cum sociis natoque penatibus et magnis dis parturient.</p>
             </li>
             <li class="accordion__item">
-              <h3 class="accordion__question title title--small accordion__question--active">How to change my account
+              <h3 class="accordion__question title title--small">How to change my account
                 limits?</h3>
               <p class="accordion__answer accordion__answer--active">Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit, sed do eiusmod
@@ -636,7 +646,7 @@
 
         <h2 class="visually-hidden">навигация</h2>
 
-        <a class="section-nav__logo company-logo" href="index.html">banquee.</a>
+        <a class="section-nav__logo company-logo company-logo--footer" href="index.html">banquee.</a>
         <div class="section-nav__nav-wrapper">
           <ul class="section-nav__list">
             <li class="section-nav__item">
@@ -723,7 +733,10 @@
     </div>
   </footer>
 
-  <script src="js/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/init-swiper.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

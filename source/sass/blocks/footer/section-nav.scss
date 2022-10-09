@@ -2,10 +2,24 @@
   display: flex;
   justify-content: space-between;
   @include padding-y(96px, 80px);
+
+  @media (max-width: $desktop-small) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: $tablet) {
+    @include padding-y(60px, 60px);
+  }
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    @include padding-y(80px, 80px);
+  }
 }
 
 .section-nav__nav-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .section-nav__subtitle {
@@ -31,8 +45,19 @@
 .section-nav__list {
   min-width: 200px;
   @include zero-indents;
+
+  @media (max-width: $desktop-small) {
+    min-width: 140px;
+    text-align: center;
+  }
 }
 
 .section-nav__item {
   margin-bottom: 16px;
+}
+
+.section-nav__logo {
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }

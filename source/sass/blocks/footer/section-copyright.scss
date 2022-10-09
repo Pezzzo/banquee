@@ -3,12 +3,31 @@
   border-top: 1px solid $grey-color;
   @include padding-y(6px, 38px);
   @include font-setting(14px, 160%);
+
+  @media (max-width: $tablet) {
+    @include padding-y(20px, 30px);
+  }
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    @include padding-y(20px, 38px);
+  }
 }
 
 .section-copyright__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $desktop-small) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.section-copyright__designed {
+  @media (max-width: $desktop-small) {
+    margin-bottom: 15px;
+  }
 }
 
 .section-copyright__text-wrapper {

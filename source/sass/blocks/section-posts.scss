@@ -1,11 +1,27 @@
 .section-posts__wrapper {
   margin-bottom: 96px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    margin-bottom: 70px;
+  }
 }
 
 .section-posts__categories {
   display: flex;
   align-items: center;
   @include margin-y(0, 60px);
+
+  @media (max-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
 }
 
 .section-posts__title {
@@ -18,6 +34,18 @@
   align-items: center;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 280px;
+  }
+}
+
+.section-posts__item {
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .section-posts__button {
@@ -25,16 +53,31 @@
   padding: 4px 10px;
   background-color: $grey-light-color;
   border-radius: 4px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 
-  &:hover {
-    margin-bottom: 4px;
-    text-shadow: $base-black-opacity-50 0 4px 3px;
+  @media (min-width: $tablet) {
+    &:hover {
+      margin-bottom: 4px;
+    }
   }
 
   &--active {
     margin-bottom: 6px;
     color: $turquoise-color;
-    pointer-events: none;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 0;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      margin-bottom: 6px;
+      color: $turquoise-color;
+
+      @media (max-width: $tablet) {
+        margin-bottom: 0;
+        margin-left: 10px;
+      }
+    }
   }
 }

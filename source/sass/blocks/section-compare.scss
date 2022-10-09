@@ -1,5 +1,13 @@
 .section-compare__options-wrapper {
   margin-bottom: 96px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    margin-bottom: 60px;
+  }
 }
 
 .section-compare__list {
@@ -11,16 +19,35 @@
   margin: 0;
   padding: 0;
   column-gap: 64px;
+  border-top: 1px solid $grey-color;
   @include padding-y(32px, 32px);
 
-  border-top: 1px solid $grey-color;
+  @media (max-width: $desktop-medium) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
+  }
 }
 
 .section-compare__item {
+  @media (max-width: $desktop-medium) {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+
   &:first-child {
     position: relative;
+    display: block;
     justify-self: start;
     margin-left: 66px;
+
+    @media (max-width: $desktop-medium) {
+      margin-left: 40px;
+    }
   }
 
   &::before {
@@ -35,81 +62,151 @@
   &--1 {
     &::before {
       background: url("../img/icons/compare-icon-1.svg") 50% 50% no-repeat;
+      @media (max-width: $desktop-medium) {
+        background-size: 40px 40px;
+      }
     }
   }
 
   &--2 {
     &::before {
       background: url("../img/icons/compare-icon-2.svg") 50% 50% no-repeat;
+      @media (max-width: $desktop-medium) {
+        background-size: 40px 40px;
+      }
     }
   }
 
   &--3 {
     &::before {
       background: url("../img/icons/compare-icon-3.svg") 50% 50% no-repeat;
+      @media (max-width: $desktop-medium) {
+        background-size: 40px 40px;
+      }
     }
   }
 
   &--4 {
     &::before {
       background: url("../img/icons/compare-icon-4.svg") 50% 50% no-repeat;
+      @media (max-width: $desktop-medium) {
+        background-size: 40px 40px;
+      }
     }
   }
 
   &--5 {
     &::before {
       background: url("../img/icons/compare-icon-5.svg") 50% 50% no-repeat;
+      @media (max-width: $desktop-medium) {
+        background-size: 40px 40px;
+      }
     }
   }
 
   &--6 {
     &::before {
       background: url("../img/icons/compare-icon-6.svg") 50% 50% no-repeat;
+      @media (max-width: $desktop-medium) {
+        background-size: 40px 40px;
+      }
     }
   }
 
   &--7 {
     &::before {
       background: url("../img/icons/compare-icon-7.svg") 50% 50% no-repeat;
+      @media (max-width: $desktop-medium) {
+        background-size: 40px 40px;
+      }
     }
   }
 
   &--8 {
     &::before {
       background: url("../img/icons/compare-icon-8.svg") 50% 50% no-repeat;
+      @media (max-width: $desktop-medium) {
+        background-size: 40px 40px;
+      }
     }
   }
 
   &--9 {
     &::before {
       background: url("../img/icons/compare-icon-9.svg") 50% 50% no-repeat;
+      @media (max-width: $desktop-medium) {
+        background-size: 40px 40px;
+      }
     }
   }
 
   &--10 {
     &::before {
       background: url("../img/icons/compare-icon-10.svg") 50% 50% no-repeat;
+      @media (max-width: $desktop-medium) {
+        background-size: 40px 40px;
+      }
     }
   }
 }
 
 .section-compare__title {
   @include margin-y(0, 16px);
+
+  @media (max-width: $desktop-medium) {
+    text-align: center;
+  }
 }
 
 .section-compare__name {
+  margin: 0;
   @include font-setting(18px, 140%);
 
-  margin: 0;
+  @media (max-width: $tablet) {
+    font-size: 16px;
+  }
 }
 
 .section-compare__name-description {
   margin: 0;
   color: $base-black-opacity-50;
   @include font-setting(14px, 160%);
+
+  @media (max-width: $tablet) {
+    font-size: 13px;
+  }
 }
 
 .section-compare__option-description {
   margin: 0;
   @include font-setting(16px, 160%);
+}
+
+.section-compare__button {
+  min-width: 160px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: $turquoise-light-color;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $base-white;
+    background-color: $base-black;
+  }
+
+  @media (max-width: $tablet) {
+    min-width: 80px;
+    padding: 10px;
+  }
+
+  &--active {
+    background-color: $turquoise-color-opacity-60;
+
+    &:hover {
+      color: $base-black;
+      background-color: $turquoise-color-opacity-60;
+    }
+  }
 }

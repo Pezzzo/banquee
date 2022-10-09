@@ -6,11 +6,28 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 144px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    gap: 60px;
+  }
 }
 
 .section-transactions__text-wrapper {
   max-width: 560px;
   @include padding-y(128px, 128px);
+
+  @media (max-width: $tablet) {
+    @include padding-y(64px, 34px);
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    @include padding-y(96px, 96px);
+  }
 }
 
 .section-transactions__title {
@@ -19,10 +36,15 @@
 
 .section-transactions__list {
   &--mod {
-    width: 400px;
-    margin-top: 30px;
+    min-width: 400px;
     margin-left: 30px;
     padding: 0;
+    @include margin-y(30px, 30px);
+
+    @media (max-width: $tablet) {
+      min-width: 0;
+      margin: 0;
+    }
   }
 }
 
@@ -39,6 +61,20 @@
       background: url("../img/icons/check-mark-dark.svg") 50% 50% no-repeat;
       transform: translateY(-50%);
       content: "";
+
+      @media (max-width: $tablet) {
+        left: -26px;
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+      }
+
+      @media (min-width: $tablet) and (max-width: $desktop-medium) {
+        left: -32px;
+        width: 22px;
+        height: 22px;
+        background-size: contain;
+      }
     }
   }
 
@@ -46,11 +82,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 16px;
     padding: 16px 24px 16px 82px;
     background-color: $base-white;
     border-radius: 10px;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
 
     &::before {
       position: absolute;
@@ -62,6 +102,13 @@
       background-size: cover;
       transform: translateY(-50%);
       content: "";
+
+      @media (max-width: $tablet) {
+        left: 26px;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+      }
     }
   }
 }
@@ -75,19 +122,51 @@
 .section-transactions__cost,
 .section-transactions__name {
   @include font-setting(18px, 140%);
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    font-size: 16px;
+  }
 }
 
 .section-transactions__type {
   color: $base-black-opacity-50;
   @include font-setting(18px, 160%);
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    font-size: 16px;
+  }
 }
 
 .section-transactions__text {
   @include margin-y(16px, 32px);
   @include font-setting(20px, 180%);
 
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop-medium) {
+    font-size: 18px;
+  }
+
   &--mod {
     font-size: 18px;
     @include margin-y(0, 12px);
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-medium) {
+      font-size: 16px;
+    }
   }
 }

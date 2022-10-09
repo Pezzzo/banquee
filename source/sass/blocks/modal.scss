@@ -5,11 +5,19 @@
     position: fixed;
     top: 55%;
     left: 50%;
-    z-index: 200;
+    z-index: 100;
     display: block;
-    width: 1200px;
-    height: 70%;
+    width: 80%;
+    height: 75%;
     overflow-y: auto;
     transform: translateX(-50%) translateY(-50%);
+
+    @media (max-width: $tablet) {
+      top: 55%;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-small) {
+      top: 60%;
+    }
   }
 }

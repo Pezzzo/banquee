@@ -16,12 +16,23 @@
   box-shadow: 0 0 8px 4px $turquoise-color;
 }
 
-.swiper-pagination {
-  padding-bottom: 40px;
+.swiper {
+  &--home-page {
+    grid-column: 1/-1;
+    max-width: 100%;
+  }
+}
 
-  // @media (max-width: $desktop) {
-  //   display: none;
-  // }
+.swiper-slide {
+  &--home-page {
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+  }
+}
+
+.swiper-pagination {
+  padding-bottom: 70px;
 }
 
 .swiper-button-next {
@@ -40,13 +51,39 @@
   background-color: $turquoise-light-color;
   border-radius: 50%;
   opacity: 0.5;
+  transition: all 0.1s ease-in-out;
 
   &::after {
     font-weight: bold;
     font-size: 30px;
+
+    @media (max-width: $desktop-small) {
+      font-size: 22px;
+    }
   }
 
   &:hover {
     opacity: 1;
+  }
+
+  &:active {
+    color: $base-white;
+    background-color: $turquoise-color;
+  }
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
+  @media (max-width: $desktop-small) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.swiper-button {
+  &--home-page {
+    position: absolute;
+    top: 40%;
   }
 }

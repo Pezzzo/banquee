@@ -4,6 +4,11 @@
   padding: 32px;
   background-color: $grey-light-color;
   border-radius: 10px;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
 }
 
 .categories-filter__title {
@@ -20,7 +25,7 @@
   margin-bottom: 16px;
 }
 
-.categories-filter__category {
+.categories-filter__category-button {
   margin: 0;
   padding: 0;
   color: $base-black-opacity-50;
@@ -28,8 +33,20 @@
   @include font-setting(16px, 160%);
 
   &:hover {
+    padding-left: 3px;
+    color: $turquoise-color;
+    text-shadow: $turquoise-color 0 0 2px;
+  }
+
+  &--active {
     padding-left: 6px;
     color: $turquoise-color;
-    text-shadow: $turquoise-color 0 0 3px;
+    text-shadow: $turquoise-color 0 0 4px;
+
+    &:hover {
+      padding-left: 6px;
+      color: $turquoise-color;
+      text-shadow: $turquoise-color 0 0 4px;
+    }
   }
 }

@@ -9,6 +9,10 @@
   <link rel="preload" href="fonts/DMSans-Bold.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="fonts/DMSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
+  <link rel="preload" href="img/cards/features-cards.webp" as="image">
+  <link rel="preload" href="img/cards/features-cards@2x.webp" as="image">
+
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" as="style">
   <link rel="preload" href="css/style.min.css" as="style">
 
   <meta charset="UTF-8">
@@ -33,7 +37,7 @@
     <div class="page-header__wrapper wide-wrapper">
       <a class="page-header__logo company-logo" href="index.html">banquee.</a>
       <nav class="page-nav">
-        <ul class="page-nav__list">
+        <ul class="page-nav__list page-nav__list--closed page-nav__list--nojs">
           <li class="page-nav__item">
             <a class="page-nav__link" href="index.html">Home</a>
           </li>
@@ -54,64 +58,56 @@
                   <h3 class="blog-preview__title">Latest Articles</h3>
                   <ul class="blog-preview__list">
                     <li class="blog-preview__item">
-                      <a class="blog-preview__link" href="blog-single.html">
-                        <picture>
-                          <source type="image/webp"
-                            srcset="img/blog-images/blog-image-1.webp 1x, img/blog-images/blog-image-1@2x.webp 2x">
-                          <img class="blog-preview__img" src="img/blog-images/blog-image-1.jpg" loading="lazy"
-                            srcset="img/blog-images/blog-image-1@2x.jpg 2x" width="100" height="100"
-                            alt="бесконтактная оплата">
-                        </picture>
-                        <div class="blog-preview__text-wrapper">
-                          <h4 class="blog-preview__subtitle">How To Start Using Banko For Your Startup</h4>
-                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
-                        </div>
-                      </a>
+                      <picture>
+                        <source type="image/webp"
+                          srcset="img/blog-images/blog-image-1.webp 1x, img/blog-images/blog-image-1@2x.webp 2x">
+                        <img class="blog-preview__img" src="img/blog-images/blog-image-1.jpg" loading="lazy"
+                          srcset="img/blog-images/blog-image-1@2x.jpg 2x" width="100" height="100"
+                          alt="мини-фото поста">
+                      </picture>
+                      <div class="blog-preview__text-wrapper">
+                        <h4 class="blog-preview__subtitle">How To Start Using Banko For Your Startup</h4>
+                        <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                      </div>
                     </li>
                     <li class="blog-preview__item">
-                      <a class="blog-preview__link" href="blog-single.html">
-                        <picture>
-                          <source type="image/webp"
-                            srcset="img/blog-images/blog-image-2.webp 1x, img/blog-images/blog-image-2@2x.webp 2x">
-                          <img class="blog-preview__img" src="img/blog-images/blog-image-2.jpg" loading="lazy"
-                            srcset="img/blog-images/blog-image-2@2x.jpg 2x" width="100" height="100"
-                            alt="бесконтактная оплата">
-                        </picture>
-                        <div class="blog-preview__text-wrapper">
-                          <h4 class="blog-preview__subtitle">10 Things Nobody Told You About Banko</h4>
-                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
-                        </div>
-                      </a>
+                      <picture>
+                        <source type="image/webp"
+                          srcset="img/blog-images/blog-image-2.webp 1x, img/blog-images/blog-image-2@2x.webp 2x">
+                        <img class="blog-preview__img" src="img/blog-images/blog-image-2.jpg" loading="lazy"
+                          srcset="img/blog-images/blog-image-2@2x.jpg 2x" width="100" height="100"
+                          alt="мини-фото поста">
+                      </picture>
+                      <div class="blog-preview__text-wrapper">
+                        <h4 class="blog-preview__subtitle">10 Things Nobody Told You About Banko</h4>
+                        <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                      </div>
                     </li>
                     <li class="blog-preview__item">
-                      <a class="blog-preview__link" href="blog-single.html">
-                        <picture>
-                          <source type="image/webp"
-                            srcset="img/blog-images/blog-image-3.webp 1x, img/blog-images/blog-image-3@2x.webp 2x">
-                          <img class="blog-preview__img" src="img/blog-images/blog-image-3.jpg" loading="lazy"
-                            srcset="img/blog-images/blog-image-3@2x.jpg 2x" width="100" height="100"
-                            alt="бесконтактная оплата">
-                        </picture>
-                        <div class="blog-preview__text-wrapper">
-                          <h4 class="blog-preview__subtitle">How To Start Using Banko For Your Startup</h4>
-                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
-                        </div>
-                      </a>
+                      <picture>
+                        <source type="image/webp"
+                          srcset="img/blog-images/blog-image-3.webp 1x, img/blog-images/blog-image-3@2x.webp 2x">
+                        <img class="blog-preview__img" src="img/blog-images/blog-image-3.jpg" loading="lazy"
+                          srcset="img/blog-images/blog-image-3@2x.jpg 2x" width="100" height="100"
+                          alt="мини-фото поста">
+                      </picture>
+                      <div class="blog-preview__text-wrapper">
+                        <h4 class="blog-preview__subtitle">How To Start Using Banko For Your Startup</h4>
+                        <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                      </div>
                     </li>
                     <li class="blog-preview__item">
-                      <a class="blog-preview__link" href="blog-single.html">
-                        <picture>
-                          <source type="image/webp"
-                            srcset="img/blog-images/blog-image-4.webp 1x, img/blog-images/blog-image-4@2x.webp 2x">
-                          <img class="blog-preview__img" src="img/blog-images/blog-image-4.jpg" loading="lazy"
-                            srcset="img/blog-images/blog-image-4@2x.jpg 2x" width="100" height="100"
-                            alt="бесконтактная оплата">
-                        </picture>
-                        <div class="blog-preview__text-wrapper">
-                          <h4 class="blog-preview__subtitle">Why We Love Banko (And You Should, Too!)</h4>
-                          <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
-                        </div>
-                      </a>
+                      <picture>
+                        <source type="image/webp"
+                          srcset="img/blog-images/blog-image-4.webp 1x, img/blog-images/blog-image-4@2x.webp 2x">
+                        <img class="blog-preview__img" src="img/blog-images/blog-image-4.jpg" loading="lazy"
+                          srcset="img/blog-images/blog-image-4@2x.jpg 2x" width="100" height="100"
+                          alt="мини-фото поста">
+                      </picture>
+                      <div class="blog-preview__text-wrapper">
+                        <h4 class="blog-preview__subtitle">Why We Love Banko (And You Should, Too!)</h4>
+                        <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur...</p>
+                      </div>
                     </li>
                   </ul>
                   <a class="blog-preview__blog-link link link--arrow" href="blog.html">All Articles</a>
@@ -125,6 +121,9 @@
         <button class="page-header__sign-in" type="button">Login</button>
         <a class="page-header__open-account button button--mod" href="#">Open Account</a>
       </div>
+      <button class="page-header__burger page-header__burger--closed page-header__burger--nojs" type="button">
+        <span class="visually-hidden">меню</span>
+      </button>
     </div>
   </header>
 
@@ -151,12 +150,12 @@
     </section>
 
     <section class="section-features">
-      <div class="swiper wide-wrapper">
+      <div class="swiper">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
-            <div class="section-features__wrapper narrow-wrapper">
-              <div class="section-features__block transactions">
+            <div class="section-features__wrapper section-features__wrapper--features-page narrow-wrapper">
+              <div class="section-features__block">
                 <div class="section-features__text-wrapper section-features__text-wrapper--features-page">
                   <p class="section-features__subtitle title title--small">Transactions</p>
                   <h2 class="section-features__title section-features__title--features-margin title title--medium">Send
@@ -188,8 +187,8 @@
           </div>
 
           <div class="swiper-slide">
-            <div class="section-features__wrapper narrow-wrapper">
-              <div class="section-features__block cards">
+            <div class="section-features__wrapper section-features__wrapper--features-page narrow-wrapper">
+              <div class="section-features__block">
                 <div class="section-features__text-wrapper section-features__text-wrapper--features-page">
                   <p class="section-features__subtitle title title--small">Cards</p>
                   <h2 class="section-features__title section-features__title--features-margin title title--medium">
@@ -222,8 +221,8 @@
           </div>
 
           <div class="swiper-slide">
-            <div class="section-features__wrapper narrow-wrapper">
-              <div class="section-features__block advanced-statistics">
+            <div class="section-features__wrapper section-features__wrapper--features-page narrow-wrapper">
+              <div class="section-features__block">
                 <div class="section-features__text-wrapper section-features__text-wrapper--features-page">
                   <p class="section-features__subtitle title title--small">Advanced Statistics</p>
                   <h2 class="section-features__title section-features__title--features-margin title title--medium">Keep
@@ -255,8 +254,8 @@
           </div>
 
           <div class="swiper-slide">
-            <div class="section-features__wrapper narrow-wrapper">
-              <div class="section-features__block saving-accounts">
+            <div class="section-features__wrapper section-features__wrapper--features-page narrow-wrapper">
+              <div class="section-features__block">
                 <div class="section-features__text-wrapper section-features__text-wrapper--features-page">
                   <p class="section-features__subtitle title title--small">Saving Accounts</p>
                   <h2 class="section-features__title section-features__title--features-margin title title--medium">Lorem
@@ -343,7 +342,7 @@
           </p>
         </div>
         <div class="accounts">
-          <ul class="accounts__list">
+          <ul class="accounts__list accounts__list--features-page">
             <li class="accounts__item accounts__item--features-page">
               <div class="accounts__content">
                 <h3 class="accounts__name title title--small">Basic <span class="accounts__popular-name">Popular</span>
@@ -457,7 +456,7 @@
                 Eget gravida cum sociis natoque penatibus et magnis dis parturient.</p>
             </li>
             <li class="accordion__item">
-              <h3 class="accordion__question accordion__question--active title title--small">How to change my account
+              <h3 class="accordion__question title title--small">How to change my account
                 limits?</h3>
               <p class="accordion__answer accordion__answer--active">Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit, sed do eiusmod
@@ -493,7 +492,7 @@
 
         <h2 class="visually-hidden">навигация</h2>
 
-        <a class="section-nav__logo company-logo" href="index.html">banquee.</a>
+        <a class="section-nav__logo company-logo company-logo--footer" href="index.html">banquee.</a>
         <div class="section-nav__nav-wrapper">
           <ul class="section-nav__list">
             <li class="section-nav__item">
@@ -581,8 +580,9 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/accordion.js"></script>
   <script src="js/init-swiper.js"></script>
-  <script src="js/index.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
